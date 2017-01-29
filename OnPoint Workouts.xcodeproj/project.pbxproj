@@ -11,8 +11,8 @@
 		BA28679F1E3BAFA200D1811A /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA28679E1E3BAFA200D1811A /* FirstViewController.swift */; };
 		BA2867A11E3BAFA200D1811A /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2867A01E3BAFA200D1811A /* SecondViewController.swift */; };
 		BA2867A41E3BAFA200D1811A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA2867A21E3BAFA200D1811A /* Main.storyboard */; };
-		BA2867A61E3BAFA200D1811A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA2867A51E3BAFA200D1811A /* Assets.xcassets */; };
 		BA2867A91E3BAFA200D1811A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA2867A71E3BAFA200D1811A /* LaunchScreen.storyboard */; };
+		BA2867B11E3EAA9F00D1811A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA2867A51E3BAFA200D1811A /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,7 +21,7 @@
 		BA28679E1E3BAFA200D1811A /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		BA2867A01E3BAFA200D1811A /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		BA2867A31E3BAFA200D1811A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		BA2867A51E3BAFA200D1811A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BA2867A51E3BAFA200D1811A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "/Users/Bret/Desktop/OnPoint Workouts/OnPoint Workouts/Assets.xcassets"; sourceTree = "<absolute>"; };
 		BA2867A81E3BAFA200D1811A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA2867AA1E3BAFA200D1811A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -127,7 +127,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA2867A91E3BAFA200D1811A /* LaunchScreen.storyboard in Resources */,
-				BA2867A61E3BAFA200D1811A /* Assets.xcassets in Resources */,
+				BA2867B11E3EAA9F00D1811A /* Assets.xcassets in Resources */,
 				BA2867A41E3BAFA200D1811A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
