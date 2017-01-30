@@ -304,6 +304,7 @@
 				BA2867AF1E3BAFA200D1811A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
