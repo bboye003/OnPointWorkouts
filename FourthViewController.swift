@@ -8,49 +8,43 @@
 
 import UIKit
 
-class FourthViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
-    
-    
-    @IBOutlet weak var heightFtBox: UITextField!
-    @IBOutlet weak var dropDownHeightFt: UIPickerView!
-    
-    var ftHeight = ["1","2","3","4","5","6","7","8"]
+class FourthViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
+    @IBOutlet weak var heightFtText: UITextField!
+    
+    var heightFt = ["1","2","3","4","5","6","7","8"]
+    let picker = UIPickerView()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        dropDownHeightFt.isHidden = true;
-        heightFtBox.text = ftHeight[0]
+        picker.delegate = self
+        picker.dataSource = self
+        
+        heightFtText.inputView = picker
+        // Do any additional setup after loading the view.
     }
     
-    func numberOfComponents(in pickerView: UIPickerView) -> Int
+    public func numberOfComponents(in pickerView: UIPickerView) -> Int
     {
         return 1
     }
     
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String?
+    public func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int
     {
-        return ftHeight[row]
+        return heightFt.count
     }
     
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int
-    {
-        return ftHeight.count
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return heightFt[row]
     }
     
-    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int)
-    {
-        heightFtBox.text = ftHeight[row]
-        dropDownHeightFt.isHidden = true
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        heightFtText.text = heightFt[row]
+        self.view.endEditing(false)
     }
     
-    func heightFtBoxEditing(textField: UITextField) -> Bool
-    {
-        dropDownHeightFt.isHidden = false
-        return false
-    }
-    
-    
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
