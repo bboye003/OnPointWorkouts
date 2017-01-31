@@ -16,6 +16,12 @@ class FourthViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     
     var ftHeight = ["1","2","3","4","5","6","7","8"]
 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        dropDownHeightFt.isHidden = true;
+        heightFtBox.text = ftHeight[0]
+    }
+    
     func numberOfComponents(in pickerView: UIPickerView) -> Int
     {
         return 1
@@ -37,15 +43,14 @@ class FourthViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
         dropDownHeightFt.isHidden = true
     }
     
-    
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    func heightFtBoxEditing(textField: UITextField) -> Bool
+    {
+        dropDownHeightFt.isHidden = false
+        return false
     }
-
+    
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
