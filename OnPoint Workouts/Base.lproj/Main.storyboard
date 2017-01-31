@@ -97,7 +97,7 @@
         <!--Supplementation-->
         <scene sceneID="7WM-UH-fzC">
             <objects>
-                <viewController id="n8O-Je-IZW" sceneMemberID="viewController">
+                <viewController id="n8O-Je-IZW" customClass="ThirdViewController" customModule="OnPoint_Workouts" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="B8U-mE-I4n"/>
                         <viewControllerLayoutGuide type="bottom" id="1BJ-y5-Xdq"/>

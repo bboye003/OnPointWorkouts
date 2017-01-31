@@ -34,7 +34,9 @@ class FourthViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int)
     {
         heightFtBox.text = ftHeight[row]
+        dropDownHeightFt.isHidden = true
     }
+    
     
     
     
