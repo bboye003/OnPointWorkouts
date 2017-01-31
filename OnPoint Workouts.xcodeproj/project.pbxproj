@@ -13,6 +13,8 @@
 		BA2867A41E3BAFA200D1811A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA2867A21E3BAFA200D1811A /* Main.storyboard */; };
 		BA2867A91E3BAFA200D1811A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA2867A71E3BAFA200D1811A /* LaunchScreen.storyboard */; };
 		BA2867B11E3EAA9F00D1811A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA2867A51E3BAFA200D1811A /* Assets.xcassets */; };
+		BACCDB651E40FAB60088D345 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACCDB641E40FAB60088D345 /* FourthViewController.swift */; };
+		BACCDB671E40FB350088D345 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACCDB661E40FB350088D345 /* ThirdViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		BA2867A51E3BAFA200D1811A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "/Users/Bret/Desktop/OnPoint Workouts/OnPoint Workouts/Assets.xcassets"; sourceTree = "<absolute>"; };
 		BA2867A81E3BAFA200D1811A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA2867AA1E3BAFA200D1811A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BACCDB641E40FAB60088D345 /* FourthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FourthViewController.swift; path = ../FourthViewController.swift; sourceTree = "<group>"; };
+		BACCDB661E40FB350088D345 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ThirdViewController.swift; path = ../ThirdViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				BA28679C1E3BAFA200D1811A /* AppDelegate.swift */,
 				BA28679E1E3BAFA200D1811A /* FirstViewController.swift */,
 				BA2867A01E3BAFA200D1811A /* SecondViewController.swift */,
+				BACCDB661E40FB350088D345 /* ThirdViewController.swift */,
+				BACCDB641E40FAB60088D345 /* FourthViewController.swift */,
 				BA2867A21E3BAFA200D1811A /* Main.storyboard */,
 				BA2867A51E3BAFA200D1811A /* Assets.xcassets */,
 				BA2867A71E3BAFA200D1811A /* LaunchScreen.storyboard */,
@@ -140,7 +146,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BACCDB651E40FAB60088D345 /* FourthViewController.swift in Sources */,
 				BA2867A11E3BAFA200D1811A /* SecondViewController.swift in Sources */,
+				BACCDB671E40FB350088D345 /* ThirdViewController.swift in Sources */,
 				BA28679D1E3BAFA200D1811A /* AppDelegate.swift in Sources */,
 				BA28679F1E3BAFA200D1811A /* FirstViewController.swift in Sources */,
 			);
