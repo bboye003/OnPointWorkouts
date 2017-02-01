@@ -8,27 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		BA28679D1E3BAFA200D1811A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA28679C1E3BAFA200D1811A /* AppDelegate.swift */; };
-		BA28679F1E3BAFA200D1811A /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA28679E1E3BAFA200D1811A /* FirstViewController.swift */; };
-		BA2867A11E3BAFA200D1811A /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2867A01E3BAFA200D1811A /* SecondViewController.swift */; };
 		BA2867A41E3BAFA200D1811A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA2867A21E3BAFA200D1811A /* Main.storyboard */; };
 		BA2867A91E3BAFA200D1811A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA2867A71E3BAFA200D1811A /* LaunchScreen.storyboard */; };
 		BA2867B11E3EAA9F00D1811A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA2867A51E3BAFA200D1811A /* Assets.xcassets */; };
-		BACCDB671E40FB350088D345 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACCDB661E40FB350088D345 /* ThirdViewController.swift */; };
 		BACCDB6F1E41B3910088D345 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACCDB6E1E41B3910088D345 /* ProfileViewController.swift */; };
+		BACCDB711E4242810088D345 /* WorkoutTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACCDB701E4242810088D345 /* WorkoutTypeViewController.swift */; };
+		BACCDB731E4242970088D345 /* NutritionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACCDB721E4242970088D345 /* NutritionViewController.swift */; };
+		BACCDB751E4242A50088D345 /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACCDB741E4242A50088D345 /* ProgressViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BA2867991E3BAFA200D1811A /* OnPoint Workouts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OnPoint Workouts.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA28679C1E3BAFA200D1811A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BA28679E1E3BAFA200D1811A /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		BA2867A01E3BAFA200D1811A /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		BA2867A31E3BAFA200D1811A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BA2867A51E3BAFA200D1811A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "/Users/Bret/Desktop/OnPoint Workouts/OnPoint Workouts/Assets.xcassets"; sourceTree = "<absolute>"; };
 		BA2867A81E3BAFA200D1811A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA2867AA1E3BAFA200D1811A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BACCDB661E40FB350088D345 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ThirdViewController.swift; path = ../ThirdViewController.swift; sourceTree = "<group>"; };
 		BACCDB691E41AE4A0088D345 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		BACCDB6E1E41B3910088D345 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = ../ProfileViewController.swift; sourceTree = "<group>"; };
+		BACCDB701E4242810088D345 /* WorkoutTypeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WorkoutTypeViewController.swift; path = ../WorkoutTypeViewController.swift; sourceTree = "<group>"; };
+		BACCDB721E4242970088D345 /* NutritionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NutritionViewController.swift; path = ../NutritionViewController.swift; sourceTree = "<group>"; };
+		BACCDB741E4242A50088D345 /* ProgressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProgressViewController.swift; path = ../ProgressViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,9 +62,9 @@
 			isa = PBXGroup;
 			children = (
 				BA28679C1E3BAFA200D1811A /* AppDelegate.swift */,
-				BA28679E1E3BAFA200D1811A /* FirstViewController.swift */,
-				BA2867A01E3BAFA200D1811A /* SecondViewController.swift */,
-				BACCDB661E40FB350088D345 /* ThirdViewController.swift */,
+				BACCDB701E4242810088D345 /* WorkoutTypeViewController.swift */,
+				BACCDB721E4242970088D345 /* NutritionViewController.swift */,
+				BACCDB741E4242A50088D345 /* ProgressViewController.swift */,
 				BACCDB6E1E41B3910088D345 /* ProfileViewController.swift */,
 				BA2867A21E3BAFA200D1811A /* Main.storyboard */,
 				BA2867A51E3BAFA200D1811A /* Assets.xcassets */,
@@ -147,11 +147,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA2867A11E3BAFA200D1811A /* SecondViewController.swift in Sources */,
-				BACCDB671E40FB350088D345 /* ThirdViewController.swift in Sources */,
+				BACCDB751E4242A50088D345 /* ProgressViewController.swift in Sources */,
 				BACCDB6F1E41B3910088D345 /* ProfileViewController.swift in Sources */,
 				BA28679D1E3BAFA200D1811A /* AppDelegate.swift in Sources */,
-				BA28679F1E3BAFA200D1811A /* FirstViewController.swift in Sources */,
+				BACCDB711E4242810088D345 /* WorkoutTypeViewController.swift in Sources */,
+				BACCDB731E4242970088D345 /* NutritionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

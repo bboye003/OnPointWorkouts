@@ -1,14 +1,14 @@
 //
-//  ThirdViewController.swift
+//  ProgressViewController.swift
 //  OnPoint Workouts
 //
-//  Created by Bret Boyer on 1/31/17.
+//  Created by Bret Boyer on 2/1/17.
 //  Copyright © 2017 OnPoint Workouts. All rights reserved.
 //
 
 import UIKit
 
-class ThirdViewController: UIViewController {
+class ProgressViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
