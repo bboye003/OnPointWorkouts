@@ -15,6 +15,7 @@
 		BACCDB711E4242810088D345 /* WorkoutTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACCDB701E4242810088D345 /* WorkoutTypeViewController.swift */; };
 		BACCDB731E4242970088D345 /* NutritionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACCDB721E4242970088D345 /* NutritionViewController.swift */; };
 		BACCDB751E4242A50088D345 /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACCDB741E4242A50088D345 /* ProgressViewController.swift */; };
+		BACCDB771E42432B0088D345 /* CaliperCalcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACCDB761E42432B0088D345 /* CaliperCalcViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		BACCDB701E4242810088D345 /* WorkoutTypeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WorkoutTypeViewController.swift; path = ../WorkoutTypeViewController.swift; sourceTree = "<group>"; };
 		BACCDB721E4242970088D345 /* NutritionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NutritionViewController.swift; path = ../NutritionViewController.swift; sourceTree = "<group>"; };
 		BACCDB741E4242A50088D345 /* ProgressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProgressViewController.swift; path = ../ProgressViewController.swift; sourceTree = "<group>"; };
+		BACCDB761E42432B0088D345 /* CaliperCalcViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CaliperCalcViewController.swift; path = ../CaliperCalcViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				BACCDB721E4242970088D345 /* NutritionViewController.swift */,
 				BACCDB741E4242A50088D345 /* ProgressViewController.swift */,
 				BACCDB6E1E41B3910088D345 /* ProfileViewController.swift */,
+				BACCDB761E42432B0088D345 /* CaliperCalcViewController.swift */,
 				BA2867A21E3BAFA200D1811A /* Main.storyboard */,
 				BA2867A51E3BAFA200D1811A /* Assets.xcassets */,
 				BA2867A71E3BAFA200D1811A /* LaunchScreen.storyboard */,
@@ -151,6 +154,7 @@
 				BACCDB6F1E41B3910088D345 /* ProfileViewController.swift in Sources */,
 				BA28679D1E3BAFA200D1811A /* AppDelegate.swift in Sources */,
 				BACCDB711E4242810088D345 /* WorkoutTypeViewController.swift in Sources */,
+				BACCDB771E42432B0088D345 /* CaliperCalcViewController.swift in Sources */,
 				BACCDB731E4242970088D345 /* NutritionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
