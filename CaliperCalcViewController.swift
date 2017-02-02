@@ -10,6 +10,7 @@ import UIKit
 
 class CaliperCalcViewController: UIViewController {
 
+    @IBOutlet weak var maleFemaleController: UISegmentedControl!
     @IBOutlet weak var chest: UITextField!
     @IBOutlet weak var tricep: UITextField!
     @IBOutlet weak var back: UITextField!
@@ -18,6 +19,16 @@ class CaliperCalcViewController: UIViewController {
     @IBOutlet weak var midax: UITextField!
     @IBOutlet weak var subpra: UITextField!
     @IBOutlet weak var calcOutput: UILabel!
+    
+    @IBAction func maleFemale(_ sender: UISegmentedControl) {
+        switch maleFemaleController.selectedSegmentIndex {
+        case 0:
+            
+        }
+        
+    }
+
+    
     
     @IBAction func caliperCalc(_ sender: UIButton)
     {
@@ -38,11 +49,7 @@ class CaliperCalcViewController: UIViewController {
         let sumOfParts5 = ((sumOfParts1 + sumOfParts2 + sumOfParts3 + sumOfParts4))
         calcOutput.text = String(sumOfParts5)
 
-        var boneDenMen: Double
-        
-        
-        
-        
+        //var boneDenMen: Double
         
         
     }
