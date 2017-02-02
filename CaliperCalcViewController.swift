@@ -10,6 +10,43 @@ import UIKit
 
 class CaliperCalcViewController: UIViewController {
 
+    @IBOutlet weak var chest: UITextField!
+    @IBOutlet weak var tricep: UITextField!
+    @IBOutlet weak var back: UITextField!
+    @IBOutlet weak var thigh: UITextField!
+    @IBOutlet weak var abdominal: UITextField!
+    @IBOutlet weak var midax: UITextField!
+    @IBOutlet weak var subpra: UITextField!
+    @IBOutlet weak var calcOutput: UILabel!
+    
+    @IBAction func caliperCalc(_ sender: UIButton)
+    {
+        let myChest = Double(self.chest.text!)
+        let myTricep = Double(self.tricep.text!)
+        let myBack = Double(self.back.text!)
+        let myThigh = Double(self.thigh.text!)
+        let myAbdominal = Double(self.abdominal.text!)
+        let myMidax = Double(self.midax.text!)
+        let mySubpra = Double(self.subpra.text!)
+        
+        //sum of all data
+        let sumOfParts1 = ((myChest! + myTricep!))
+        let sumOfParts2 = ((myBack! + myThigh!))
+        let sumOfParts3 = ((myAbdominal! + myMidax!))
+        let sumOfParts4 = ((mySubpra!))
+        //total
+        let sumOfParts5 = ((sumOfParts1 + sumOfParts2 + sumOfParts3 + sumOfParts4))
+        calcOutput.text = String(sumOfParts5)
+
+        var boneDenMen: Double
+        
+        
+        
+        
+        
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
