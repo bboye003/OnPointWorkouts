@@ -20,14 +20,14 @@ class CaliperCalcViewController: UIViewController {
     @IBOutlet weak var subpra: UITextField!
     @IBOutlet weak var calcOutput: UILabel!
     
-    @IBAction func maleFemale(_ sender: UISegmentedControl) {
+    /*@IBAction func maleFemale(_ sender: UISegmentedControl) {
         switch maleFemaleController.selectedSegmentIndex {
         case 0:
             
         }
         
     }
-
+*/
     
     
     @IBAction func caliperCalc(_ sender: UIButton)
