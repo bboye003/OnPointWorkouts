@@ -47,10 +47,13 @@ class CaliperCalcViewController: UIViewController {
         let sumOfParts4 = ((mySubpra!))
         //total
         let sumOfParts5 = ((sumOfParts1 + sumOfParts2 + sumOfParts3 + sumOfParts4))
-        calcOutput.text = String(sumOfParts5)
+        //calcOutput.text = String(sumOfParts5)
 
-        //var boneDenMen: Double
-        
+        /*var boneDenMen, bodyfat: Double
+         boneDenMen = 1.112(0.00043499 * sumOfParts5) + (0.00000056 * sumOfParts5)
+         boneDenMen2 = boneDenMen - (0.00012826 * age)
+         bodyfat = ((4.95/boneDenMen) - 4.5) * 100
+         */
         
     }
     

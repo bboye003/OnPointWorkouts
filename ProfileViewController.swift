@@ -8,7 +8,8 @@
 
 import UIKit
 
-class ProfileViewController: UIViewController {
+class ProfileViewController: UIViewController //UIPickerViewDelegate, UIPickerViewDataSource
+{
 
     override func viewDidLoad() {
         super.viewDidLoad()
