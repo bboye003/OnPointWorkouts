@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sa6-9x-kAK">
-                                <rect key="frame" x="0.0" y="210" width="375" height="137"/>
+                                <rect key="frame" x="0.0" y="207" width="375" height="149"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
@@ -34,21 +34,8 @@
                                     <segue destination="5WU-gS-q74" kind="show" id="H98-88-gde"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WgN-gf-9mV">
-                                <rect key="frame" x="0.0" y="346" width="375" height="143"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <state key="normal" title="Exercises">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="zWp-Bv-3YH" kind="show" id="Q79-30-Bos"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tTO-gU-8bW">
-                                <rect key="frame" x="0.0" y="489" width="375" height="129"/>
+                                <rect key="frame" x="0.0" y="497" width="375" height="121"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
@@ -71,6 +58,19 @@
                                 </state>
                                 <connections>
                                     <segue destination="ZpG-pU-wMT" kind="show" id="GId-RP-REw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WgN-gf-9mV">
+                                <rect key="frame" x="0.0" y="355" width="375" height="143"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="Exercises">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="zWp-Bv-3YH" kind="show" id="Q79-30-Bos"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -216,7 +216,7 @@
                             <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Nutrition" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Nutrition" image="Apple" selectedImage="Apple" id="cPa-gy-q4n"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
@@ -256,7 +256,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Progress" image="second" id="fI7-rn-jrP"/>
+                    <tabBarItem key="tabBarItem" title="Progress" image="Progress" selectedImage="Progress" id="fI7-rn-jrP"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n9Z-Tc-xjv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -373,7 +373,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mDI-p5-40k">
-                                <rect key="frame" x="117" y="354" width="140" height="30"/>
+                                <rect key="frame" x="117" y="344" width="140" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
@@ -583,7 +583,7 @@
         <scene sceneID="er1-XL-m8w">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Yhh-he-Zx2" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Profile" image="second" selectedImage="second" id="GqN-cU-BN7"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="Profile" selectedImage="Profile" id="GqN-cU-BN7"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="zaa-jt-1Az">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -602,7 +602,7 @@
         <scene sceneID="5QJ-88-v2K">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2uw-0N-WXR" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Workout" image="second" selectedImage="second" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Workout" image="Workout" selectedImage="Workout" id="acW-dT-cKf"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="sRc-MD-ga5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -619,6 +619,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="second" width="30" height="30"/>
+        <image name="Apple" width="25" height="25"/>
+        <image name="Profile" width="25" height="25"/>
+        <image name="Progress" width="25" height="25"/>
+        <image name="Workout" width="25" height="25"/>
     </resources>
 </document>
