@@ -10,6 +10,8 @@ import UIKit
 
 class CaliperCalcViewController: UIViewController {
 
+    @IBOutlet weak var age: UITextField!
+    @IBOutlet weak var genderController: UISegmentedControl!
     @IBOutlet weak var maleFemaleController: UISegmentedControl!
     @IBOutlet weak var chest: UITextField!
     @IBOutlet weak var tricep: UITextField!
@@ -46,14 +48,17 @@ class CaliperCalcViewController: UIViewController {
         let sumOfParts3 = ((myAbdominal! + myMidax!))
         let sumOfParts4 = ((mySubpra!))
         //total
+        let sumOfParts: Double
         let sumOfParts5 = ((sumOfParts1 + sumOfParts2 + sumOfParts3 + sumOfParts4))
         //calcOutput.text = String(sumOfParts5)
 
-        /*var boneDenMen, bodyfat: Double
-         boneDenMen = 1.112(0.00043499 * sumOfParts5) + (0.00000056 * sumOfParts5)
-         boneDenMen2 = boneDenMen - (0.00012826 * age)
-         bodyfat = ((4.95/boneDenMen) - 4.5) * 100
-         */
+        var boneDenMen: Double
+        var age: Double
+        var bodyfat: Double
+        boneDenMen = 1.112 * (0.00043499 * sumOfParts5) + (0.00000056 * sumOfParts5)
+        let boneDenMen2 = boneDenMen - (0.00012826 * age)
+        bodyfat = ((4.95/boneDenMen2) - 4.5) * 100
+        
         
     }
     
