@@ -39,7 +39,7 @@ class CaliperCalcViewController: UIViewController {
         let sumOfParts3 = ((myAbdominal! + myMidax!))
         let sumOfParts4 = ((mySubpra!))
         //total
-        //let sumOfParts: Double
+        
         let sumOfParts5 = ((sumOfParts1 + sumOfParts2 + sumOfParts3 + sumOfParts4))
         
         var boneDenMen: Double
@@ -52,11 +52,6 @@ class CaliperCalcViewController: UIViewController {
         
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
+    
   
 }
