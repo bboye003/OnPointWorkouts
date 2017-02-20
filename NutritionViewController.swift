@@ -22,11 +22,11 @@ class NutritionViewController: UIViewController {
         let entFats = Double(self.fats.text!)
         
         //for every gram of protein and carb is 4 calories
-        let carbCal = (entCarbs! * 4.0)
-        let proCal = (entProtein! * 4.0)
+        let carbCal = Double(entCarbs! * 4.0)
+        let proCal = Double(entProtein! * 4.0)
         
         //for every gram of fat is 9 calories
-        let fatCal = (entFats! * 9.0)
+        let fatCal = Double(entFats! * 9.0)
         
         //Calculate
         var totalCal: Double
@@ -34,7 +34,7 @@ class NutritionViewController: UIViewController {
         totalCal = (carbCal + proCal)
         totalCal2 = (totalCal + fatCal)
         
-        caloriesOutput.text = String(totalCal2)
+        return caloriesOutput.text = String(totalCal2)
     }
     
     
