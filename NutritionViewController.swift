@@ -15,7 +15,7 @@ class NutritionViewController: UIViewController {
     @IBOutlet weak var fats: UITextField!
     @IBOutlet weak var caloriesOutput: UILabel!
     
-    
+    /* failing here
     @IBAction func calCalories(_ sender: UIButton) {
         let entCarbs = Double(self.carbs.text!)
         let entProtein = Double(self.protein.text!)
@@ -36,7 +36,7 @@ class NutritionViewController: UIViewController {
         
         return caloriesOutput.text = String(totalCal2)
     }
-    
+    */
     
    
 }
