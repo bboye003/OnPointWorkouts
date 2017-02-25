@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BA171A311E5F5B5000B45E6E /* CrossFitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA171A301E5F5B5000B45E6E /* CrossFitViewController.swift */; };
+		BA171A331E6245BA00B45E6E /* WorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA171A321E6245BA00B45E6E /* WorkoutViewController.swift */; };
 		BA28679D1E3BAFA200D1811A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA28679C1E3BAFA200D1811A /* AppDelegate.swift */; };
 		BA2867A41E3BAFA200D1811A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA2867A21E3BAFA200D1811A /* Main.storyboard */; };
 		BA2867A91E3BAFA200D1811A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA2867A71E3BAFA200D1811A /* LaunchScreen.storyboard */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		BA171A301E5F5B5000B45E6E /* CrossFitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrossFitViewController.swift; sourceTree = "<group>"; };
+		BA171A321E6245BA00B45E6E /* WorkoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutViewController.swift; sourceTree = "<group>"; };
 		BA2867991E3BAFA200D1811A /* OnPoint Workouts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OnPoint Workouts.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA28679C1E3BAFA200D1811A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA2867A31E3BAFA200D1811A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				BACCDB741E4242A50088D345 /* ProgressViewController.swift */,
 				BACCDB6E1E41B3910088D345 /* ProfileViewController.swift */,
 				BACCDB761E42432B0088D345 /* CaliperCalcViewController.swift */,
+				BA171A321E6245BA00B45E6E /* WorkoutViewController.swift */,
 				BA2867A21E3BAFA200D1811A /* Main.storyboard */,
 				BA2867A51E3BAFA200D1811A /* Assets.xcassets */,
 				BA2867A71E3BAFA200D1811A /* LaunchScreen.storyboard */,
@@ -153,6 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA171A331E6245BA00B45E6E /* WorkoutViewController.swift in Sources */,
 				BACCDB751E4242A50088D345 /* ProgressViewController.swift in Sources */,
 				BACCDB6F1E41B3910088D345 /* ProfileViewController.swift in Sources */,
 				BA28679D1E3BAFA200D1811A /* AppDelegate.swift in Sources */,
