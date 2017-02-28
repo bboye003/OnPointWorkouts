@@ -47,7 +47,9 @@ class CaliperCalcViewController: UIViewController {
         boneDenMen = 1.112 - (0.00043499 * sumOfParts5) + (0.00000056 * (sumOfParts5 * sumOfParts5))
         let boneDenMen2 = boneDenMen - (0.00028826 * myAge!)
         bodyfat = ((4.95/boneDenMen2) - 4.5) * 100
-        calcOutput.text = String(bodyfat)
+        bodyfat = (round(100 * bodyfat) / 100)
+        
+        calcOutput.text = String("Bodyfat: \(bodyfat)%")
         
         
     }
