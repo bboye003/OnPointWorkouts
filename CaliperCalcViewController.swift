@@ -51,7 +51,6 @@ class CaliperCalcViewController: UIViewController {
         
         calcOutput.text = String("Bodyfat: \(bodyfat)%")
         
-        
     }
     
     
