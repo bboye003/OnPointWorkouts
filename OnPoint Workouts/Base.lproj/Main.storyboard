@@ -427,7 +427,7 @@
                                 <items>
                                     <barButtonItem systemItem="add" id="oRw-ds-cGf">
                                         <connections>
-                                            <segue destination="vcA-Xs-TOO" kind="show" id="Co6-2W-kN4"/>
+                                            <segue destination="vcA-Xs-TOO" kind="show" id="xwU-SL-gdm"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
@@ -454,15 +454,18 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="table" destination="hkE-gn-OTV" id="Xrb-eM-YYj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="evV-O2-bBn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1605.5999999999999" y="-1634.0329835082459"/>
         </scene>
-        <!--Add To Workout View Controller-->
+        <!--Add To View Controller-->
         <scene sceneID="12U-VF-BlT">
             <objects>
-                <viewController id="vcA-Xs-TOO" customClass="AddToWorkoutViewController" customModule="OnPoint_Workouts" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vcA-Xs-TOO" customClass="AddToViewController" customModule="OnPoint_Workouts" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rNa-GW-6Cr"/>
                         <viewControllerLayoutGuide type="bottom" id="XqX-gE-xb3"/>
@@ -497,7 +500,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="add:" destination="vcA-Xs-TOO" eventType="touchUpInside" id="qzt-rA-94t"/>
+                                    <action selector="add:" destination="vcA-Xs-TOO" eventType="touchUpInside" id="BSf-z4-OYC"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -505,6 +508,7 @@
                     </view>
                     <connections>
                         <outlet property="exerciseText" destination="SVK-Kf-sAy" id="ysg-CD-v8O"/>
+                        <outlet property="itemTextField" destination="SVK-Kf-sAy" id="7HY-XM-IRO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XEZ-iE-kOU" userLabel="First Responder" sceneMemberID="firstResponder"/>

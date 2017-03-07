@@ -10,7 +10,9 @@ import UIKit
 
 class WorkoutTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-     var items: NSMutableArray = []
+    @IBOutlet var table: UITableView!
+    
+     var items: [String] = []
     
     internal func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
@@ -22,13 +24,7 @@ class WorkoutTableViewController: UIViewController, UITableViewDelegate, UITable
         
         let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "Cell")
         
-        var cellLabel = ""
-        
-        if let myLabel = items[indexPath.row] as? String {
-            cellLabel = myLabel
-        }
-        
-        cell.textLabel?.text = cellLabel
+        cell.textLabel?.text = items[indexPath.row]
        
         return cell
     
@@ -40,16 +36,36 @@ class WorkoutTableViewController: UIViewController, UITableViewDelegate, UITable
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let itemsObject = UserDefaults.standard.object(forKey: "exercises")
-        
-        
-        if let myItems = itemsObject as? NSMutableArray {
-            
-            items = myItems
-
-        }
     }
 
+    
+    override func viewDidAppear(_ animated: Bool) {
+        let itemsObject = UserDefaults.standard.object(forKey: "items")
+        
+        
+        if let myItems = itemsObject as? [String] {
+            
+            items = myItems
+            
+        }
+
+        table.reloadData()
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        
+        if editingStyle == UITableViewCellEditingStyle.delete {
+            items.remove(at: indexPath.row)
+            
+            table.reloadData()
+            
+            UserDefaults.standard.set(items, forKey: "items")
+        }
+    }
+    
+    
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
