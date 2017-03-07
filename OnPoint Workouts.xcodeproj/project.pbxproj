@@ -12,8 +12,6 @@
 		BA2867A41E3BAFA200D1811A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA2867A21E3BAFA200D1811A /* Main.storyboard */; };
 		BA2867A91E3BAFA200D1811A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA2867A71E3BAFA200D1811A /* LaunchScreen.storyboard */; };
 		BA2867B11E3EAA9F00D1811A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA2867A51E3BAFA200D1811A /* Assets.xcassets */; };
-		BAA138CB1E6F52E600CB92D6 /* WorkoutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA138CA1E6F52E600CB92D6 /* WorkoutTableViewController.swift */; };
-		BAA138CF1E6F68AE00CB92D6 /* AddToViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA138CE1E6F68AE00CB92D6 /* AddToViewController.swift */; };
 		BACCDB6F1E41B3910088D345 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACCDB6E1E41B3910088D345 /* ProfileViewController.swift */; };
 		BACCDB711E4242810088D345 /* WorkoutTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACCDB701E4242810088D345 /* WorkoutTypeViewController.swift */; };
 		BACCDB731E4242970088D345 /* NutritionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACCDB721E4242970088D345 /* NutritionViewController.swift */; };
@@ -29,8 +27,6 @@
 		BA2867A51E3BAFA200D1811A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "/Users/Bret/Desktop/OnPoint Workouts/OnPoint Workouts/Assets.xcassets"; sourceTree = "<absolute>"; };
 		BA2867A81E3BAFA200D1811A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA2867AA1E3BAFA200D1811A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BAA138CA1E6F52E600CB92D6 /* WorkoutTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutTableViewController.swift; sourceTree = "<group>"; };
-		BAA138CE1E6F68AE00CB92D6 /* AddToViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddToViewController.swift; sourceTree = "<group>"; };
 		BACCDB691E41AE4A0088D345 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		BACCDB6E1E41B3910088D345 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = ../ProfileViewController.swift; sourceTree = "<group>"; };
 		BACCDB701E4242810088D345 /* WorkoutTypeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WorkoutTypeViewController.swift; path = ../WorkoutTypeViewController.swift; sourceTree = "<group>"; };
@@ -76,8 +72,6 @@
 				BACCDB741E4242A50088D345 /* ProgressViewController.swift */,
 				BACCDB6E1E41B3910088D345 /* ProfileViewController.swift */,
 				BACCDB761E42432B0088D345 /* CaliperCalcViewController.swift */,
-				BAA138CA1E6F52E600CB92D6 /* WorkoutTableViewController.swift */,
-				BAA138CE1E6F68AE00CB92D6 /* AddToViewController.swift */,
 				BA2867A21E3BAFA200D1811A /* Main.storyboard */,
 				BA2867A51E3BAFA200D1811A /* Assets.xcassets */,
 				BA2867A71E3BAFA200D1811A /* LaunchScreen.storyboard */,
@@ -160,9 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BACCDB751E4242A50088D345 /* ProgressViewController.swift in Sources */,
-				BAA138CF1E6F68AE00CB92D6 /* AddToViewController.swift in Sources */,
 				BACCDB6F1E41B3910088D345 /* ProfileViewController.swift in Sources */,
-				BAA138CB1E6F52E600CB92D6 /* WorkoutTableViewController.swift in Sources */,
 				BA28679D1E3BAFA200D1811A /* AppDelegate.swift in Sources */,
 				BACCDB711E4242810088D345 /* WorkoutTypeViewController.swift in Sources */,
 				BACCDB771E42432B0088D345 /* CaliperCalcViewController.swift in Sources */,
