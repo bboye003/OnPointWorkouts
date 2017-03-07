@@ -12,6 +12,7 @@
 		BA2867A41E3BAFA200D1811A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA2867A21E3BAFA200D1811A /* Main.storyboard */; };
 		BA2867A91E3BAFA200D1811A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA2867A71E3BAFA200D1811A /* LaunchScreen.storyboard */; };
 		BA2867B11E3EAA9F00D1811A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA2867A51E3BAFA200D1811A /* Assets.xcassets */; };
+		BAA138C91E6F420A00CB92D6 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA138C81E6F420A00CB92D6 /* PageViewController.swift */; };
 		BAA27C9E1E662E79006F56AE /* CustomTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA27C9D1E662E79006F56AE /* CustomTableViewController.swift */; };
 		BAA27CA01E662EA8006F56AE /* AddToTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA27C9F1E662EA8006F56AE /* AddToTableViewController.swift */; };
 		BACCDB6F1E41B3910088D345 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACCDB6E1E41B3910088D345 /* ProfileViewController.swift */; };
@@ -29,6 +30,7 @@
 		BA2867A51E3BAFA200D1811A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "/Users/Bret/Desktop/OnPoint Workouts/OnPoint Workouts/Assets.xcassets"; sourceTree = "<absolute>"; };
 		BA2867A81E3BAFA200D1811A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA2867AA1E3BAFA200D1811A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAA138C81E6F420A00CB92D6 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		BAA27C9D1E662E79006F56AE /* CustomTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewController.swift; sourceTree = "<group>"; };
 		BAA27C9F1E662EA8006F56AE /* AddToTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddToTableViewController.swift; sourceTree = "<group>"; };
 		BACCDB691E41AE4A0088D345 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 			children = (
 				BA28679C1E3BAFA200D1811A /* AppDelegate.swift */,
 				BACCDB701E4242810088D345 /* WorkoutTypeViewController.swift */,
+				BAA138C81E6F420A00CB92D6 /* PageViewController.swift */,
 				BA171A301E5F5B5000B45E6E /* CrossFitViewController.swift */,
 				BACCDB721E4242970088D345 /* NutritionViewController.swift */,
 				BACCDB741E4242A50088D345 /* ProgressViewController.swift */,
@@ -160,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BACCDB751E4242A50088D345 /* ProgressViewController.swift in Sources */,
+				BAA138C91E6F420A00CB92D6 /* PageViewController.swift in Sources */,
 				BACCDB6F1E41B3910088D345 /* ProfileViewController.swift in Sources */,
 				BAA27CA01E662EA8006F56AE /* AddToTableViewController.swift in Sources */,
 				BA28679D1E3BAFA200D1811A /* AppDelegate.swift in Sources */,
