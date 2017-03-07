@@ -409,10 +409,10 @@
             </objects>
             <point key="canvasLocation" x="401" y="-1655"/>
         </scene>
-        <!--View Controller-->
+        <!--Workout Table View Controller-->
         <scene sceneID="bNW-Ky-Of7">
             <objects>
-                <viewController id="2RP-ww-tiH" sceneMemberID="viewController">
+                <viewController id="2RP-ww-tiH" customClass="WorkoutTableViewController" customModule="OnPoint_Workouts" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="YiX-Cw-760"/>
                         <viewControllerLayoutGuide type="bottom" id="LmZ-Cg-1cc"/>
@@ -459,10 +459,10 @@
             </objects>
             <point key="canvasLocation" x="1605.5999999999999" y="-1634.0329835082459"/>
         </scene>
-        <!--View Controller-->
+        <!--Add To Workout View Controller-->
         <scene sceneID="12U-VF-BlT">
             <objects>
-                <viewController id="vcA-Xs-TOO" sceneMemberID="viewController">
+                <viewController id="vcA-Xs-TOO" customClass="AddToWorkoutViewController" customModule="OnPoint_Workouts" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rNa-GW-6Cr"/>
                         <viewControllerLayoutGuide type="bottom" id="XqX-gE-xb3"/>
@@ -484,6 +484,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vcA-Xs-TOO" id="QKl-Ln-Dkz"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gdP-Tq-tUk">
                                 <rect key="frame" x="143" y="330" width="88" height="52"/>
@@ -493,10 +496,16 @@
                                 <state key="normal" title="Add">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="add:" destination="vcA-Xs-TOO" eventType="touchUpInside" id="qzt-rA-94t"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="exerciseText" destination="SVK-Kf-sAy" id="ysg-CD-v8O"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XEZ-iE-kOU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
