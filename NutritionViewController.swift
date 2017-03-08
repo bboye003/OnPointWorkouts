@@ -25,13 +25,9 @@ class NutritionViewController: UIViewController {
         fat = (fat! * 4)
         protein = (protein! * 4)
         
-        var totalCalories = (carb!) + (fat!) + (protein!)
+        //var totalCalories = (carb!) + (fat!) + (protein!)
         
-        
-        
-        
-        
-        
+        //return outputLabel.text = String(totalCalories)
         
         
     }

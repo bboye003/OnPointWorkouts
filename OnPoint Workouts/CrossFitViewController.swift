@@ -11,8 +11,9 @@ import UIKit
 class CrossFitViewController: UIViewController {
 
     @IBAction func WODlink(_ sender: UIButton) {
-        if let url = NSURL(string: "https://www.crossfit.com/workout/") {
-            UIApplication.shared.openURL(url as URL) // unsure of compiler warning
+        let url = URL(string: "https://www.crossfit.com/workout/")!
+            if UIApplication.shared.canOpenURL(url) {
+                UIApplication.shared.open(url)
         }
     
     }
