@@ -10,33 +10,29 @@ import UIKit
 
 class NutritionViewController: UIViewController {
 
-    @IBOutlet weak var carbs: UITextField!
-    @IBOutlet weak var protein: UITextField!
-    @IBOutlet weak var fats: UITextField!
-    @IBOutlet weak var caloriesOutput: UILabel!
-    
-    /* failing here
-    @IBAction func calCalories(_ sender: UIButton) {
-        let entCarbs = Double(self.carbs.text!)
-        let entProtein = Double(self.protein.text!)
-        let entFats = Double(self.fats.text!)
+    @IBOutlet var carbTextField: UITextField!
+    @IBOutlet var fatTextField: UITextField!
+    @IBOutlet var proteinTextField: UITextField!
+    @IBOutlet var outputLabel: UILabel!
+      
+    @IBAction func calorieCalculator(_ sender: Any) {
         
-        //for every gram of protein and carb is 4 calories
-        let carbCal = Double(entCarbs! * 4.0)
-        let proCal = Double(entProtein! * 4.0)
+        var carb = Int(self.carbTextField.text!)
+        var fat = Int(self.fatTextField.text!)
+        var protein = Int(self.proteinTextField.text!)
         
-        //for every gram of fat is 9 calories
-        let fatCal = Double(entFats! * 9.0)
+        carb = (carb! * 4)
+        fat = (fat! * 4)
+        protein = (protein! * 4)
         
-        //Calculate
-        var totalCal: Double
-        var totalCal2: Double
-        totalCal = (carbCal + proCal)
-        totalCal2 = (totalCal + fatCal)
+        var totalCalories = (carb!) + (fat!) + (protein!)
         
-        return caloriesOutput.text = String(totalCal2)
+        
+        
+        
+        
+        
+        
+        
     }
-    */
-    
-   
 }

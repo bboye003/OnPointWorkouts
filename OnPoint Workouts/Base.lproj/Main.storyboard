@@ -648,6 +648,7 @@
                                 <connections>
                                     <action selector="calCalories:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="LY2-di-Uh7"/>
                                     <action selector="calculateMacro:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="DHA-H2-jYw"/>
+                                    <action selector="calorieCalculator:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="woI-e7-1Ra"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-----" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="60p-bT-e6k">
@@ -662,10 +663,17 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Nutrition" image="Apple" selectedImage="Apple" id="cPa-gy-q4n"/>
                     <connections>
+                        <outlet property="calLabel" destination="60p-bT-e6k" id="jpi-pH-zZV"/>
                         <outlet property="caloriesOutput" destination="60p-bT-e6k" id="pOF-1J-O7C"/>
+                        <outlet property="carbTextField" destination="zAj-lj-3cy" id="XAo-lt-Uma"/>
                         <outlet property="carbs" destination="zAj-lj-3cy" id="Xng-gQ-hMC"/>
+                        <outlet property="carbsTextField" destination="zAj-lj-3cy" id="2A8-xa-JJo"/>
+                        <outlet property="fatTextField" destination="eUR-Ev-23f" id="iJd-ce-n4w"/>
                         <outlet property="fats" destination="eUR-Ev-23f" id="wrT-Fb-KS4"/>
+                        <outlet property="fatsTextField" destination="eUR-Ev-23f" id="5bd-il-Zyn"/>
+                        <outlet property="outputLabel" destination="60p-bT-e6k" id="crk-5v-dRx"/>
                         <outlet property="protein" destination="H02-Or-0lI" id="0Me-zR-Wdo"/>
+                        <outlet property="proteinTextField" destination="H02-Or-0lI" id="CXv-TC-TGL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
