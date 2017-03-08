@@ -439,28 +439,35 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="Proto" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="ZcE-wh-rkh">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="Proto" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="ZcE-wh-rkh">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZcE-wh-rkh" id="Ls1-ld-Ire">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="nnV-jh-UZT" id="ezH-Sg-4OB"/>
+                                    <outlet property="delegate" destination="nnV-jh-UZT" id="FKO-bx-X2Y"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="table" destination="D5W-wv-wHJ" id="emY-Dz-L9Z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zaQ-Rf-ShQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1412" y="-1651.1244377811095"/>
         </scene>
-        <!--View Controller-->
+        <!--Add To Workout View Controller-->
         <scene sceneID="mjp-8m-IB8">
             <objects>
-                <viewController id="3ye-vc-KPa" sceneMemberID="viewController">
+                <viewController id="3ye-vc-KPa" customClass="AddToWorkoutViewController" customModule="OnPoint_Workouts" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vKY-Yh-q3u"/>
                         <viewControllerLayoutGuide type="bottom" id="6rf-do-gMk"/>
@@ -468,12 +475,43 @@
                     <view key="view" contentMode="scaleToFill" id="fTl-7M-yxc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vjy-PZ-SAS">
+                                <rect key="frame" x="140" y="358" width="95" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <state key="normal" title="Add">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="add:" destination="3ye-vc-KPa" eventType="touchUpInside" id="Qn4-T3-Cjb"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add to Workout" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xMP-Uj-hDk">
+                                <rect key="frame" x="101" y="160" width="174" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ex. Bench Press" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y6w-PR-djS">
+                                <rect key="frame" x="86" y="269" width="203" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="itemTextField" destination="y6w-PR-djS" id="avR-aq-XLr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vqf-FB-AFe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2180" y="-1651"/>
+            <point key="canvasLocation" x="2180" y="-1651.1244377811095"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="JlE-n8-yKX">
