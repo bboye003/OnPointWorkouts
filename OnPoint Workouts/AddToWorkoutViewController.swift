@@ -29,7 +29,7 @@ class AddToWorkoutViewController: UIViewController {
         itemTextField.text = ""
     
     }
-    
+    // toggle keyboard
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }

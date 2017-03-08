@@ -14,28 +14,22 @@ class WorkoutTableViewController: UIViewController, UITabBarDelegate, UITableVie
     
     var items:[String] = []
     
-    
+    //table view row
     internal func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
         return items.count
-        
     }
     
-  
+    //table information being grabbed
     internal func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "Cell")
-        
         cell.textLabel?.text = items[indexPath.row]
-        
         return cell
-        
     }
     
     
-
+    //Reloads stored data
     override func viewDidAppear(_ animated: Bool) {
         let itemsObject = UserDefaults.standard.object(forKey: "items")
-        
         if let myItems = itemsObject as? [String] {
             items = myItems
         }
@@ -43,19 +37,13 @@ class WorkoutTableViewController: UIViewController, UITabBarDelegate, UITableVie
     }
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        
         if editingStyle == UITableViewCellEditingStyle.delete {
-            
             items.remove(at: indexPath.row)
-            
             table.reloadData()
-            
             UserDefaults.standard.set(items, forKey: "items")
-            
         }
     
     }
-    
     
     
     override func viewDidLoad() {
