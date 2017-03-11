@@ -14,9 +14,9 @@
 		BA2867B11E3EAA9F00D1811A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA2867A51E3BAFA200D1811A /* Assets.xcassets */; };
 		BA6136DA1E704E9400DD4341 /* AddToWorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6136D91E704E9400DD4341 /* AddToWorkoutViewController.swift */; };
 		BAA138D11E6F834D00CB92D6 /* WorkoutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA138D01E6F834D00CB92D6 /* WorkoutTableViewController.swift */; };
+		BACC6D861E74B9350045FA6A /* NewNutritionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACC6D851E74B9350045FA6A /* NewNutritionViewController.swift */; };
 		BACCDB6F1E41B3910088D345 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACCDB6E1E41B3910088D345 /* ProfileViewController.swift */; };
 		BACCDB711E4242810088D345 /* WorkoutTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACCDB701E4242810088D345 /* WorkoutTypeViewController.swift */; };
-		BACCDB731E4242970088D345 /* NutritionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACCDB721E4242970088D345 /* NutritionViewController.swift */; };
 		BACCDB751E4242A50088D345 /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACCDB741E4242A50088D345 /* ProgressViewController.swift */; };
 		BACCDB771E42432B0088D345 /* CaliperCalcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACCDB761E42432B0088D345 /* CaliperCalcViewController.swift */; };
 /* End PBXBuildFile section */
@@ -31,10 +31,10 @@
 		BA2867AA1E3BAFA200D1811A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA6136D91E704E9400DD4341 /* AddToWorkoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddToWorkoutViewController.swift; sourceTree = "<group>"; };
 		BAA138D01E6F834D00CB92D6 /* WorkoutTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutTableViewController.swift; sourceTree = "<group>"; };
+		BACC6D851E74B9350045FA6A /* NewNutritionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewNutritionViewController.swift; sourceTree = "<group>"; };
 		BACCDB691E41AE4A0088D345 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		BACCDB6E1E41B3910088D345 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = ../ProfileViewController.swift; sourceTree = "<group>"; };
 		BACCDB701E4242810088D345 /* WorkoutTypeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WorkoutTypeViewController.swift; path = ../WorkoutTypeViewController.swift; sourceTree = "<group>"; };
-		BACCDB721E4242970088D345 /* NutritionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NutritionViewController.swift; path = ../NutritionViewController.swift; sourceTree = "<group>"; };
 		BACCDB741E4242A50088D345 /* ProgressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProgressViewController.swift; path = ../ProgressViewController.swift; sourceTree = "<group>"; };
 		BACCDB761E42432B0088D345 /* CaliperCalcViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CaliperCalcViewController.swift; path = ../CaliperCalcViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,7 +72,7 @@
 				BA28679C1E3BAFA200D1811A /* AppDelegate.swift */,
 				BACCDB701E4242810088D345 /* WorkoutTypeViewController.swift */,
 				BA171A301E5F5B5000B45E6E /* CrossFitViewController.swift */,
-				BACCDB721E4242970088D345 /* NutritionViewController.swift */,
+				BACC6D851E74B9350045FA6A /* NewNutritionViewController.swift */,
 				BACCDB741E4242A50088D345 /* ProgressViewController.swift */,
 				BACCDB6E1E41B3910088D345 /* ProfileViewController.swift */,
 				BACCDB761E42432B0088D345 /* CaliperCalcViewController.swift */,
@@ -161,13 +161,13 @@
 			files = (
 				BACCDB751E4242A50088D345 /* ProgressViewController.swift in Sources */,
 				BACCDB6F1E41B3910088D345 /* ProfileViewController.swift in Sources */,
+				BACC6D861E74B9350045FA6A /* NewNutritionViewController.swift in Sources */,
 				BAA138D11E6F834D00CB92D6 /* WorkoutTableViewController.swift in Sources */,
 				BA28679D1E3BAFA200D1811A /* AppDelegate.swift in Sources */,
 				BA6136DA1E704E9400DD4341 /* AddToWorkoutViewController.swift in Sources */,
 				BACCDB711E4242810088D345 /* WorkoutTypeViewController.swift in Sources */,
 				BACCDB771E42432B0088D345 /* CaliperCalcViewController.swift in Sources */,
 				BA171A311E5F5B5000B45E6E /* CrossFitViewController.swift in Sources */,
-				BACCDB731E4242970088D345 /* NutritionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
