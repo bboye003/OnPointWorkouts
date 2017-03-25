@@ -43,12 +43,25 @@ class newLoginViewController: UIViewController {
                 UserDefaults.standard.set(true, forKey: "isUserLoggedIn")
                 UserDefaults.standard.synchronize()
                 self.dismiss(animated: true, completion: nil)
+                
+                
             }
         }
         
     }
     
-    
+    func displayMyAlertMessage(userMessage:String) {
+        
+        let myAlert = UIAlertController(title: "Alert", message: userMessage, preferredStyle: UIAlertControllerStyle.alert)
+        
+        let okAction = UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil)
+        
+        myAlert.addAction(okAction)
+        
+        self.present(myAlert, animated:true, completion:nil)
+        
+    }
+
   
    
 }
