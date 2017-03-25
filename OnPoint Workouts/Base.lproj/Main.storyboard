@@ -185,10 +185,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ADd-tm-2DT">
-                                <rect key="frame" x="313" y="74" width="46" height="30"/>
+                                <rect key="frame" x="241" y="71" width="123" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Login">
+                                <state key="normal" title="Login | Sign Up">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -204,10 +204,10 @@
             </objects>
             <point key="canvasLocation" x="-1434.4000000000001" y="-2067.6161919040483"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="ovI-ZU-pwI">
             <objects>
-                <viewController id="s8Z-gd-Ck9" sceneMemberID="viewController">
+                <viewController id="s8Z-gd-Ck9" customClass="LoginViewController" customModule="OnPoint_Workouts" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vt7-5d-cxx"/>
                         <viewControllerLayoutGuide type="bottom" id="RBK-La-JVO"/>
@@ -259,6 +259,9 @@
                                 <state key="normal" title="Login">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginButtonTapped:" destination="s8Z-gd-Ck9" eventType="touchUpInside" id="WPe-gI-z9c"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xdq-zq-jM3">
                                 <rect key="frame" x="131" y="455" width="97" height="48"/>
@@ -284,6 +287,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="userEmail" destination="TO3-kv-u6b" id="cgi-vd-SR6"/>
+                        <outlet property="userEmailTextField" destination="TO3-kv-u6b" id="h0y-po-WEW"/>
+                        <outlet property="userPasswordTextField" destination="rRP-jT-Prn" id="h52-n9-NPR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aSQ-13-Dr1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -631,7 +639,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZcE-wh-rkh" id="Ls1-ld-Ire">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
