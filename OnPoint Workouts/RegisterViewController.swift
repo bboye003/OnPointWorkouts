@@ -34,13 +34,23 @@ class RegisterViewController: UIViewController {
         }
         
         
-        //Store data
+        //Store data on machine
         UserDefaults.standard.set(userEmail, forKey: "userEmail")
         UserDefaults.standard.set(userPassword, forKey: "userPassword")
         UserDefaults.standard.synchronize()
         
+        let myAlert = UIAlertController(title: "Alert", message: "Registration is successful!", preferredStyle: UIAlertControllerStyle.alert)
+        let okAction = UIAlertAction(title: "Ok", style: UIAlertActionStyle.default) {
+            action in self.dismiss(animated: true, completion: nil)
+        }
+        
+        myAlert.addAction(okAction)
+        self.present(myAlert, animated: true, completion: nil)
         //Display alert message with confirmation
+        
     }
+    
+    
     
     func displayMyAlertMessage(userMessage:String) {
         
