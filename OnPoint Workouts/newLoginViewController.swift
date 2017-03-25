@@ -37,16 +37,20 @@ class newLoginViewController: UIViewController {
         let userPasswordStored = UserDefaults.standard.string(forKey: "userPassword")
 
         
+        if ((userEmail?.isEmpty)! || (userPassword?.isEmpty)!){
+            displayMyAlertMessage(userMessage: "All fields are required!")
+        }
+        
         if (userEmailStored == userEmail) {
             if (userPasswordStored == userPassword) {
                 //login successful
                 UserDefaults.standard.set(true, forKey: "isUserLoggedIn")
                 UserDefaults.standard.synchronize()
                 self.dismiss(animated: true, completion: nil)
-                
-                
+               
             }
         }
+        
         
     }
     
