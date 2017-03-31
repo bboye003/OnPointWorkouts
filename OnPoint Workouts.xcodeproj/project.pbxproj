@@ -11,9 +11,9 @@
 		BA28679D1E3BAFA200D1811A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA28679C1E3BAFA200D1811A /* AppDelegate.swift */; };
 		BA2867A91E3BAFA200D1811A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA2867A71E3BAFA200D1811A /* LaunchScreen.storyboard */; };
 		BA2867B11E3EAA9F00D1811A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA2867A51E3BAFA200D1811A /* Assets.xcassets */; };
+		BA37B0081E891F3300A36FFC /* Main.strings in Resources */ = {isa = PBXBuildFile; fileRef = BA37B0071E891F3300A36FFC /* Main.strings */; };
 		BA4C14851E86D4BC00393A50 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4C14841E86D4BC00393A50 /* RegisterViewController.swift */; };
 		BA4C148B1E86E93A00393A50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA4C148A1E86E93A00393A50 /* Main.storyboard */; };
-		BA4C148D1E86E99900393A50 /* Main.strings in Resources */ = {isa = PBXBuildFile; fileRef = BA4C148C1E86E99900393A50 /* Main.strings */; };
 		BA4C14931E86EFFF00393A50 /* newLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4C14921E86EFFF00393A50 /* newLoginViewController.swift */; };
 		BA6136DA1E704E9400DD4341 /* AddToWorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6136D91E704E9400DD4341 /* AddToWorkoutViewController.swift */; };
 		BAA138D11E6F834D00CB92D6 /* WorkoutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA138D01E6F834D00CB92D6 /* WorkoutTableViewController.swift */; };
@@ -31,9 +31,9 @@
 		BA2867A51E3BAFA200D1811A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "/Users/Bret/Desktop/OnPoint Workouts/OnPoint Workouts/Assets.xcassets"; sourceTree = "<absolute>"; };
 		BA2867A81E3BAFA200D1811A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA2867AA1E3BAFA200D1811A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA37B0071E891F3300A36FFC /* Main.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Main.strings; path = ../../Main.strings; sourceTree = "<group>"; };
 		BA4C14841E86D4BC00393A50 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		BA4C148A1E86E93A00393A50 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../Main.storyboard; sourceTree = "<group>"; };
-		BA4C148C1E86E99900393A50 /* Main.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Main.strings; path = ../../Main.strings; sourceTree = "<group>"; };
 		BA4C14921E86EFFF00393A50 /* newLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = newLoginViewController.swift; sourceTree = "<group>"; };
 		BA6136D91E704E9400DD4341 /* AddToWorkoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddToWorkoutViewController.swift; sourceTree = "<group>"; };
 		BAA138D01E6F834D00CB92D6 /* WorkoutTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutTableViewController.swift; sourceTree = "<group>"; };
@@ -85,8 +85,8 @@
 				BACCDB761E42432B0088D345 /* CaliperCalcViewController.swift */,
 				BAA138D01E6F834D00CB92D6 /* WorkoutTableViewController.swift */,
 				BA6136D91E704E9400DD4341 /* AddToWorkoutViewController.swift */,
-				BA4C148C1E86E99900393A50 /* Main.strings */,
 				BA4C148A1E86E93A00393A50 /* Main.storyboard */,
+				BA37B0071E891F3300A36FFC /* Main.strings */,
 				BA2867A51E3BAFA200D1811A /* Assets.xcassets */,
 				BA2867A71E3BAFA200D1811A /* LaunchScreen.storyboard */,
 				BA2867AA1E3BAFA200D1811A /* Info.plist */,
@@ -155,7 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA4C148B1E86E93A00393A50 /* Main.storyboard in Resources */,
-				BA4C148D1E86E99900393A50 /* Main.strings in Resources */,
+				BA37B0081E891F3300A36FFC /* Main.strings in Resources */,
 				BA2867A91E3BAFA200D1811A /* LaunchScreen.storyboard in Resources */,
 				BA2867B11E3EAA9F00D1811A /* Assets.xcassets in Resources */,
 			);
