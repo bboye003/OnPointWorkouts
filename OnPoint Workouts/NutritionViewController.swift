@@ -16,7 +16,9 @@ class NutritionViewController: UIViewController {
 //Calculate calories from user input
     @IBAction func CalorieCalculator(_ sender: Any) {
         
-        var carb, fat, protein : Int
+        var carb = Int(0)
+        var fat = Int(0)
+        var protein = Int(0)
             
         carb = Int(self.carbTextField.text!)!
         fat = Int(self.fatTextField.text!)!
@@ -50,19 +52,30 @@ class NutritionViewController: UIViewController {
     
     @IBAction func MacroCalculate(_ sender: Any) {
         
+        var calories : Double
         var percCarb, percFat, percProtein : Double
         
+        var totalCarbs, totalFat, totalProtein : Double
+        
+        calories = Double(self.caloriesTaken.text!)!
         percCarb = Double(self.carbPercentText.text!)!
         percFat = Double(self.fatPercentText.text!)!
         percProtein = Double(self.proteinPercentText.text!)!
         
+        //put into decimal form
         percCarb = (percCarb / 100)
         percFat = (percFat / 100)
         percProtein = (percProtein / 100)
         
+        // convert to grams
+        totalCarbs = ((calories * percCarb) / 4)
+        totalFat = ((calories * percFat) / 9)
+        totalProtein = ((calories * percProtein) / 4)
         
         
-        
+        carbOutput.text = String(totalCarbs)
+        proteinOutput.text = String(totalProtein)
+        fatOutput.text = String(totalFat)
     }
     
     
