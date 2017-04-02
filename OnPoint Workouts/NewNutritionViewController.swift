@@ -10,17 +10,20 @@ import UIKit
 
 class NewNutritionViewController: UIViewController {
 
-    @IBOutlet var carbTextField: UITextField!
-    @IBOutlet var fatTextField: UITextField!
+    @IBOutlet var carbsTextField: UITextField!
+    @IBOutlet var fatsTextField: UITextField!
+    @IBOutlet var prosTextField: UITextField!
+    
+//    @IBOutlet var fatTextField: UITextField!
     @IBOutlet var proteinTextField: UITextField!
     
     @IBOutlet var outputLabel: UILabel!
     
-    @IBAction func calorieCalculator(_ sender: Any) {
+   /* @IBAction func calorieCalculator(_ sender: Any) {
         var carb, fat, protein : Int
         
-        carb = Int(self.carbTextField.text!)!
-        fat = Int(self.fatTextField.text!)!
+        carb = Int(self.carbsTextField.text!)!
+        fat = Int(self.fatsTextField.text!)!
         protein = Int(self.proteinTextField.text!)!
         
         carb = (carb * 4)
@@ -34,7 +37,7 @@ class NewNutritionViewController: UIViewController {
 
     }
     
-    
+    */
     
     override func viewDidLoad() {
         super.viewDidLoad()

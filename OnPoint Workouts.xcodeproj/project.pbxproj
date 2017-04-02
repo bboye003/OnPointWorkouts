@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA1228291E90861A00008A87 /* NutritionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1228281E90861A00008A87 /* NutritionViewController.swift */; };
 		BA171A311E5F5B5000B45E6E /* CrossFitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA171A301E5F5B5000B45E6E /* CrossFitViewController.swift */; };
 		BA28679D1E3BAFA200D1811A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA28679C1E3BAFA200D1811A /* AppDelegate.swift */; };
 		BA2867A91E3BAFA200D1811A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA2867A71E3BAFA200D1811A /* LaunchScreen.storyboard */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BA1228281E90861A00008A87 /* NutritionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NutritionViewController.swift; sourceTree = "<group>"; };
 		BA171A301E5F5B5000B45E6E /* CrossFitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrossFitViewController.swift; sourceTree = "<group>"; };
 		BA2867991E3BAFA200D1811A /* OnPoint Workouts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OnPoint Workouts.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA28679C1E3BAFA200D1811A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 				BA28679C1E3BAFA200D1811A /* AppDelegate.swift */,
 				BA4C14921E86EFFF00393A50 /* newLoginViewController.swift */,
 				BA4C14841E86D4BC00393A50 /* RegisterViewController.swift */,
+				BA1228281E90861A00008A87 /* NutritionViewController.swift */,
 				BACCDB701E4242810088D345 /* WorkoutTypeViewController.swift */,
 				BA171A301E5F5B5000B45E6E /* CrossFitViewController.swift */,
 				BACC6D851E74B9350045FA6A /* NewNutritionViewController.swift */,
@@ -171,6 +174,7 @@
 				BACCDB751E4242A50088D345 /* ProgressViewController.swift in Sources */,
 				BA4C14851E86D4BC00393A50 /* RegisterViewController.swift in Sources */,
 				BACCDB6F1E41B3910088D345 /* ProfileViewController.swift in Sources */,
+				BA1228291E90861A00008A87 /* NutritionViewController.swift in Sources */,
 				BACC6D861E74B9350045FA6A /* NewNutritionViewController.swift in Sources */,
 				BAA138D11E6F834D00CB92D6 /* WorkoutTableViewController.swift in Sources */,
 				BA28679D1E3BAFA200D1811A /* AppDelegate.swift in Sources */,
