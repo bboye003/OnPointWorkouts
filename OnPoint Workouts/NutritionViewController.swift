@@ -35,7 +35,7 @@ class NutritionViewController: UIViewController {
     }
     
 //Getting data for percent of calories
-    
+/*
     
     @IBOutlet var caloriesTaken: UITextField!
     @IBOutlet var carbPercentText: UITextField!
@@ -82,7 +82,7 @@ class NutritionViewController: UIViewController {
     
     
     
-    
+   */ 
     
     
     override func viewDidLoad() {
