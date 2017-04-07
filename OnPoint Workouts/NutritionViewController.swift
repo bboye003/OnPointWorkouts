@@ -9,7 +9,7 @@
 import UIKit
 
 class NutritionViewController: UIViewController {
-    @IBOutlet var carbTextField: UITextField!
+/*    @IBOutlet var carbTextField: UITextField!
     @IBOutlet var fatTextField: UITextField!
     @IBOutlet var proteinTextField: UITextField!
     @IBOutlet var outputLabel: UILabel!
@@ -35,7 +35,7 @@ class NutritionViewController: UIViewController {
     }
     
 //Getting data for percent of calories
-/*
+
     
     @IBOutlet var caloriesTaken: UITextField!
     @IBOutlet var carbPercentText: UITextField!
