@@ -10,6 +10,32 @@ import UIKit
 
 class CalorieCalcViewController: UIViewController {
 
+    @IBOutlet var carbsTextField: UITextField!
+    @IBOutlet var fatsTextField: UITextField!
+    @IBOutlet var proteinsTextField: UITextField!
+    @IBOutlet var calLabel: UILabel!
+    
+    
+    @IBAction func caloriesTapped(_ sender: Any) {
+        
+         var carb, fat, protein : Int
+         
+         carb = Int(self.carbsTextField.text!)!
+         fat = Int(self.fatsTextField.text!)!
+         protein = Int(self.proteinsTextField.text!)!
+         
+         carb = (carb * 4)
+         fat = (fat * 9)
+         protein = (protein * 4)
+         
+         let totalCalories = (carb) + (fat) + (protein)
+         
+         return calLabel.text = String(totalCalories)
+
+        
+        
+    }
+    /*
     @IBOutlet var carbTextField: UITextField!
     @IBOutlet var fatTextField: UITextField!
     @IBOutlet var proteinTextField: UITextField!
@@ -33,7 +59,7 @@ class CalorieCalcViewController: UIViewController {
 
     }
     
-    
+    */
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,6 +71,6 @@ class CalorieCalcViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+ 
 
 }
