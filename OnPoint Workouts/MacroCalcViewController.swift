@@ -24,18 +24,29 @@ class MacroCalcViewController: UIViewController {
     
     
     @IBAction func macroCalculate(_ sender: Any) {
+        
         var calories : Double
         var percCarb, percFat, percProtein : Double
         
         var totalCarbs, totalFat, totalProtein : Double
+        
+
         
         calories = Double(self.caloriesTaken.text!)!
         percCarb = Double(self.carbPercentText.text!)!
         percFat = Double(self.fatPercentText.text!)!
         percProtein = Double(self.proteinPercentText.text!)!
         
-        if (percCarb + percFat + percProtein == 100.00) {
-            displayMyAlertMessage(userMessage:"Does not equal 100%")
+        if ((percCarb.isZero) || (percFat.isZero) || (percProtein.isZero)) {
+            displayMyAlertMessage(userMessage: "All fields are required!")
+            return
+            
+        }
+
+        
+        if (Int(percCarb) + Int(percFat) + Int(percProtein) != 100) {
+            displayMyAlertMessage(userMessage:"Carbs, Fats, and Protein\nDo not equal 100%")
+            return
         }
         
         //put into decimal form
