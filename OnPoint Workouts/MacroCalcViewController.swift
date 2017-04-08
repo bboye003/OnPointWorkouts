@@ -34,6 +34,10 @@ class MacroCalcViewController: UIViewController {
         percFat = Double(self.fatPercentText.text!)!
         percProtein = Double(self.proteinPercentText.text!)!
         
+        if (percCarb + percFat + percProtein == 100.00) {
+            displayMyAlertMessage(userMessage:"Does not equal 100%")
+        }
+        
         //put into decimal form
         percCarb = (percCarb / 100)
         percFat = (percFat / 100)
@@ -50,6 +54,16 @@ class MacroCalcViewController: UIViewController {
         fatOutput.text = String(Int(totalFat))
 
     }
+    
+    func displayMyAlertMessage(userMessage:String) {
+        
+        let myAlert = UIAlertController(title: "Alert", message: userMessage, preferredStyle: UIAlertControllerStyle.alert)
+        let okAction = UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil)
+        myAlert.addAction(okAction)
+        self.present(myAlert, animated:true, completion:nil)
+        
+    }
+
     
     
     override func viewDidLoad() {
