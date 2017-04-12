@@ -37,10 +37,15 @@ class MacroCalcViewController: UIViewController {
         percFat = Double(self.fatPercentText.text!)!
         percProtein = Double(self.proteinPercentText.text!)!
         
+        
         if ((percCarb.isZero) || (percFat.isZero) || (percProtein.isZero)) {
             displayMyAlertMessage(userMessage: "All fields are required!")
             return
             
+        }
+        if (Int(calories) > 30000) {
+            displayMyAlertMessage(userMessage: "No human has ever eaten more than 30,000 calories in a day\nPlease try again!")
+            return
         }
 
         
@@ -60,9 +65,9 @@ class MacroCalcViewController: UIViewController {
         totalProtein = round(100 * (calories * percProtein) / 400)
         
         //display whole gram amount
-        carbOutput.text = String(Int(totalCarbs))
-        proteinOutput.text = String(Int(totalProtein))
-        fatOutput.text = String(Int(totalFat))
+        carbOutput.text = String(totalCarbs)
+        proteinOutput.text = String(totalProtein)
+        fatOutput.text = String(totalFat)
 
     }
     
