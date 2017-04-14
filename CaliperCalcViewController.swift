@@ -20,7 +20,72 @@ class CaliperCalcViewController: UIViewController {
     @IBOutlet weak var midax: UITextField!
     @IBOutlet weak var subpra: UITextField!
     @IBOutlet weak var calcOutput: UILabel!
-   
+    
+    
+    @IBAction func tricepButton(_ sender: Any) {
+        let url = URL(string: "http://www.topendsports.com/testing/skinfold-tricep.htm")!
+        if UIApplication.shared.canOpenURL(url) {
+            UIApplication.shared.open(url)
+        }
+        
+
+    }
+    
+    @IBAction func chestButton(_ sender: Any) {
+        let url = URL(string: "http://www.topendsports.com/testing/skinfold-chest.htm")!
+        if UIApplication.shared.canOpenURL(url) {
+            UIApplication.shared.open(url)
+        }
+        
+
+    }
+    
+    @IBAction func thighButton(_ sender: Any) {
+        let url = URL(string: "http://www.topendsports.com/testing/skinfold-front-thigh.htm")!
+        if UIApplication.shared.canOpenURL(url) {
+            UIApplication.shared.open(url)
+        }
+        
+
+    }
+    
+    //subscalar
+    @IBAction func backButton(_ sender: Any) {
+        let url = URL(string: "http://www.topendsports.com/testing/skinfold-subscapular.htm")!
+        if UIApplication.shared.canOpenURL(url) {
+            UIApplication.shared.open(url)
+        }
+        
+
+    }
+
+    
+    @IBAction func abButton(_ sender: Any) {
+        let url = URL(string: "http://www.topendsports.com/testing/skinfold-abdominal.htm")!
+        if UIApplication.shared.canOpenURL(url) {
+            UIApplication.shared.open(url)
+        }
+        
+
+    }
+    
+    @IBAction func midaxillaryButton(_ sender: Any) {
+        let url = URL(string: "http://www.topendsports.com/testing/skinfold-axilla.htm")!
+        if UIApplication.shared.canOpenURL(url) {
+            UIApplication.shared.open(url)
+        }
+        
+
+    }
+    
+    @IBAction func subprailiacButton(_ sender: Any) {
+        let url = URL(string: "http://www.topendsports.com/testing/skinfold-supraspinale.htm")!
+        if UIApplication.shared.canOpenURL(url) {
+            UIApplication.shared.open(url)
+        }
+
+        
+    }
     
     
     @IBAction func caliperCalc(_ sender: UIButton)
