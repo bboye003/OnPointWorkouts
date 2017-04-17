@@ -46,7 +46,7 @@ class newLoginViewController: UIViewController {
                 //login successful
                 UserDefaults.standard.set(true, forKey: "isUserLoggedIn")
                 UserDefaults.standard.synchronize()
-                let myAlert = UIAlertController(title: "Alert", message: "Registration is successful!", preferredStyle: UIAlertControllerStyle.alert)
+                let myAlert = UIAlertController(title: "Alert", message: "Login is successful!", preferredStyle: UIAlertControllerStyle.alert)
                 let okAction = UIAlertAction(title: "Ok", style: UIAlertActionStyle.default) {
                     action in self.dismiss(animated: true, completion: nil)
                 }
