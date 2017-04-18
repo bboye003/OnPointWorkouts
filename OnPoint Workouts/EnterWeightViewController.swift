@@ -13,7 +13,7 @@ class EnterWeightViewController: UIViewController {
     
     @IBOutlet var weightTextField: UITextField!
     
-    @IBOutlet var units: UISwitch!
+    @IBOutlet var metric: UISwitch!
     
     //save weight entry
     @IBAction func buttonSaved(_ sender: Any) {
