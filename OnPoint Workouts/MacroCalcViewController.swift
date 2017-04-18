@@ -43,8 +43,9 @@ class MacroCalcViewController: UIViewController {
             return
             
         }
-        if (Int(calories) > 30000) {
-            displayMyAlertMessage(userMessage: "No human has ever eaten more than 30,000 calories in a day\nPlease try again!")
+        
+        if (Int(calories) > 45000) {
+            displayMyAlertMessage(userMessage: "No human has ever eaten more than 45,000 calories in a day\nPlease try again!")
             return
         }
 
@@ -72,7 +73,6 @@ class MacroCalcViewController: UIViewController {
     }
     
     func displayMyAlertMessage(userMessage:String) {
-        
         let myAlert = UIAlertController(title: "Alert", message: userMessage, preferredStyle: UIAlertControllerStyle.alert)
         let okAction = UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil)
         myAlert.addAction(okAction)
@@ -80,18 +80,6 @@ class MacroCalcViewController: UIViewController {
         
     }
 
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
 
 }

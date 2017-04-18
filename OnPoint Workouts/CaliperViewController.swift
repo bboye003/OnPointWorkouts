@@ -2,7 +2,7 @@
 //  CaliperViewController.swift
 //  OnPoint Workouts
 //
-//  Created by Bret Boyer on 4/14/17.
+//  Created by Bret Boyer on 2/7/17.
 //  Copyright © 2017 OnPoint Workouts. All rights reserved.
 //
 
@@ -10,6 +10,8 @@ import UIKit
 
 class CaliperViewController: UIViewController {
 
+    
+    //understanding of how to do measurements
     @IBAction func tricepsURL(_ sender: Any) {
         let url = URL(string: "http://www.topendsports.com/testing/skinfold-tricep.htm")!
         if UIApplication.shared.canOpenURL(url) {
@@ -119,15 +121,5 @@ class CaliperViewController: UIViewController {
         
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
 }
