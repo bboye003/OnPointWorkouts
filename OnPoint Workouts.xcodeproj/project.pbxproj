@@ -25,6 +25,7 @@
 		BACCDB711E4242810088D345 /* WorkoutTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACCDB701E4242810088D345 /* WorkoutTypeViewController.swift */; };
 		BADEE68D1EA67F9600B44461 /* EnterWeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADEE68C1EA67F9600B44461 /* EnterWeightViewController.swift */; };
 		BADEE68F1EA6804500B44461 /* WeightLogTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADEE68E1EA6804500B44461 /* WeightLogTableViewController.swift */; };
+		BADEE6CF1EA68E3A00B44461 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BADEE6CD1EA68E3A00B44461 /* Model.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		BACCDB701E4242810088D345 /* WorkoutTypeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WorkoutTypeViewController.swift; path = ../WorkoutTypeViewController.swift; sourceTree = "<group>"; };
 		BADEE68C1EA67F9600B44461 /* EnterWeightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterWeightViewController.swift; sourceTree = "<group>"; };
 		BADEE68E1EA6804500B44461 /* WeightLogTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeightLogTableViewController.swift; sourceTree = "<group>"; };
+		BADEE6CE1EA68E3A00B44461 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 				BA6136D91E704E9400DD4341 /* AddToWorkoutViewController.swift */,
 				BA4C148A1E86E93A00393A50 /* Main.storyboard */,
 				BA37B0071E891F3300A36FFC /* Main.strings */,
+				BADEE6CD1EA68E3A00B44461 /* Model.xcdatamodeld */,
 				BA2867A51E3BAFA200D1811A /* Assets.xcassets */,
 				BA2867A71E3BAFA200D1811A /* LaunchScreen.storyboard */,
 				BA2867AA1E3BAFA200D1811A /* Info.plist */,
@@ -179,6 +182,7 @@
 			files = (
 				BA4C14851E86D4BC00393A50 /* RegisterViewController.swift in Sources */,
 				BAB67A601E97E51400138822 /* CalorieCalcViewController.swift in Sources */,
+				BADEE6CF1EA68E3A00B44461 /* Model.xcdatamodeld in Sources */,
 				BADEE68D1EA67F9600B44461 /* EnterWeightViewController.swift in Sources */,
 				BACCDB6F1E41B3910088D345 /* ProfileViewController.swift in Sources */,
 				BADEE68F1EA6804500B44461 /* WeightLogTableViewController.swift in Sources */,
@@ -347,6 +351,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BADEE6CD1EA68E3A00B44461 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BADEE6CE1EA68E3A00B44461 /* Model.xcdatamodel */,
+			);
+			currentVersion = BADEE6CE1EA68E3A00B44461 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = BA2867911E3BAFA200D1811A /* Project object */;
 }

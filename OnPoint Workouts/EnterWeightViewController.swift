@@ -17,7 +17,6 @@ class EnterWeightViewController: UIViewController {
     
     //save weight entry
     @IBAction func buttonSaved(_ sender: Any) {
-        
     }
     
     
