@@ -12,21 +12,9 @@ class newLoginViewController: UIViewController {
 
     
     @IBOutlet weak var userEmailFieldText: UITextField!
-    
     @IBOutlet weak var userPasswordFieldText: UITextField!
     
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
+       
 
     @IBAction func loginButtonTapped(_ sender: Any) {
         

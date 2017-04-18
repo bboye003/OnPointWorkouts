@@ -10,6 +10,17 @@ import UIKit
 
 class EnterWeightViewController: UIViewController {
 
+    
+    @IBOutlet var weightTextField: UITextField!
+    
+    @IBOutlet var units: UISwitch!
+    
+    //save weight entry
+    @IBAction func buttonSaved(_ sender: Any) {
+        
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
