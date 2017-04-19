@@ -19,9 +19,9 @@ class EnterWeightViewController: UIViewController {
     //save weight entry
     @IBAction func buttonSaved(_ sender: Any) {
         //reference to appdelegate
-//        var appDel: AppDelegate = (UIApplication.shared.delegate as! AppDelegate)
-//        var context: NSManagedObjectContext = appDel.
-        
+        let appDel = (UIApplication.shared.delegate as! AppDelegate)
+        let context = appDel.persistentContainer.viewContext
+        let entity = NSEntityDescription.insertNewObject(forEntityName: "UserWeights", into: context)
         
         
         
