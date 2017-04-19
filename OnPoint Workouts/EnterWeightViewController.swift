@@ -13,17 +13,35 @@ class EnterWeightViewController: UIViewController {
 
     
     @IBOutlet var weightTextField: UITextField!
-    
     @IBOutlet var metric: UISwitch!
     
     //save weight entry
     @IBAction func buttonSaved(_ sender: Any) {
-        //reference to appdelegate
-        let appDel = (UIApplication.shared.delegate as! AppDelegate)
-        let context = appDel.persistentContainer.viewContext
-        let entity = NSEntityDescription.insertNewObject(forEntityName: "UserWeights", into: context)
         
         
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        let newWeight = UserWeight(context: context)
+        
+        newWeight.weight = weightTextField.text! //Check to make sure this is filled (Alert message)
+        
+        //metric used
+        if (metric.isOn){
+            newWeight.units = "lbs"
+        } else {
+            newWeight.units = "kgs"
+        }
+        
+        //formatting date
+        let date = Date()
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MM.dd.yyyy"
+        let realDate = formatter.string(from: date)
+        
+        newWeight.date = realDate
+        
+        
+        //Save the data
+        (UIApplication.shared.delegate as! AppDelegate).saveContext()
         
     }
     
