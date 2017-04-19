@@ -93,6 +93,7 @@ class CaliperViewController: UIViewController {
     @IBOutlet var subTextField: UITextField!
     
     @IBOutlet var calcOutput: UILabel!
+    @IBOutlet var genderSwitch: UISwitch!
 
     @IBAction func calculate(_ sender: Any) {
         
@@ -104,22 +105,26 @@ class CaliperViewController: UIViewController {
          let mid = Double(self.midTextField.text!)!
          let sub = Double(self.subTextField.text!)!
          let age = Double(self.ageTextField.text!)!
+         var boneDen, bodyfat: Double
          //sum of all data
          let sumOfParts = (chest + tricep + back + thigh + ab + mid + sub)
          //total
-        
-         var boneDenMen: Double
-         var bodyfat: Double
-         boneDenMen = 1.112 - (0.00043499 * sumOfParts) + (0.00000056 * (sumOfParts * sumOfParts))
-         let boneDenMen2 = boneDenMen - (0.00028826 * age)
-         bodyfat = ((4.95/boneDenMen2) - 4.5) * 100
-         bodyfat = (round(100 * bodyfat) / 100)
-         
-         calcOutput.text = String("Bodyfat: \(bodyfat)%")
-         
+        if (genderSwitch.isOn) {
+            boneDen = (1.097 - (0.00046971 * sumOfParts) + (0.00000056 * (sumOfParts * sumOfParts)) - (0.00012828 * age))
+            bodyfat = ((4.95/boneDen) - 4.5) * 100
+            bodyfat = (round(100 * bodyfat) / 100)
+            calcOutput.text = String("Bodyfat: \(bodyfat)%")
+            
 
-        
+            
+        } else {
+            boneDen = (1.112 - (0.00043499 * sumOfParts) + (0.00000056 * (sumOfParts * sumOfParts)) - (0.00028826 * age))
+            bodyfat = ((4.95/boneDen) - 4.5) * 100
+            bodyfat = (round(100 * bodyfat) / 100)
+            calcOutput.text = String("Bodyfat: \(bodyfat)%")
+            
+        }
+  
     }
-    
     
 }

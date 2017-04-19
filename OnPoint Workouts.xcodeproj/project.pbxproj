@@ -13,7 +13,6 @@
 		BA2867B11E3EAA9F00D1811A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA2867A51E3BAFA200D1811A /* Assets.xcassets */; };
 		BA37B0081E891F3300A36FFC /* Main.strings in Resources */ = {isa = PBXBuildFile; fileRef = BA37B0071E891F3300A36FFC /* Main.strings */; };
 		BA4C14851E86D4BC00393A50 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4C14841E86D4BC00393A50 /* RegisterViewController.swift */; };
-		BA4C148B1E86E93A00393A50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA4C148A1E86E93A00393A50 /* Main.storyboard */; };
 		BA4C14931E86EFFF00393A50 /* newLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4C14921E86EFFF00393A50 /* newLoginViewController.swift */; };
 		BA6136DA1E704E9400DD4341 /* AddToWorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6136D91E704E9400DD4341 /* AddToWorkoutViewController.swift */; };
 		BA6B88C51EA143CA00E8A2B3 /* CaliperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6B88C41EA143CA00E8A2B3 /* CaliperViewController.swift */; };
@@ -26,7 +25,7 @@
 		BADEE68D1EA67F9600B44461 /* EnterWeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADEE68C1EA67F9600B44461 /* EnterWeightViewController.swift */; };
 		BADEE68F1EA6804500B44461 /* WeightLogTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADEE68E1EA6804500B44461 /* WeightLogTableViewController.swift */; };
 		BADEE6CF1EA68E3A00B44461 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BADEE6CD1EA68E3A00B44461 /* Model.xcdatamodeld */; };
-		BADEE6D11EA7B8B800B44461 /* UserWeights.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADEE6D01EA7B8B800B44461 /* UserWeights.swift */; };
+		BADEE6D31EA7BE5D00B44461 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BADEE6D21EA7BE5D00B44461 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,7 +37,6 @@
 		BA2867AA1E3BAFA200D1811A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA37B0071E891F3300A36FFC /* Main.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Main.strings; path = ../../Main.strings; sourceTree = "<group>"; };
 		BA4C14841E86D4BC00393A50 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
-		BA4C148A1E86E93A00393A50 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../Main.storyboard; sourceTree = "<group>"; };
 		BA4C14921E86EFFF00393A50 /* newLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = newLoginViewController.swift; sourceTree = "<group>"; };
 		BA6136D91E704E9400DD4341 /* AddToWorkoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddToWorkoutViewController.swift; sourceTree = "<group>"; };
 		BA6B88C41EA143CA00E8A2B3 /* CaliperViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaliperViewController.swift; sourceTree = "<group>"; };
@@ -51,7 +49,7 @@
 		BADEE68C1EA67F9600B44461 /* EnterWeightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterWeightViewController.swift; sourceTree = "<group>"; };
 		BADEE68E1EA6804500B44461 /* WeightLogTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeightLogTableViewController.swift; sourceTree = "<group>"; };
 		BADEE6CE1EA68E3A00B44461 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-		BADEE6D01EA7B8B800B44461 /* UserWeights.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserWeights.swift; sourceTree = "<group>"; };
+		BADEE6D21EA7BE5D00B44461 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,10 +96,9 @@
 				BA6B88C41EA143CA00E8A2B3 /* CaliperViewController.swift */,
 				BAA138D01E6F834D00CB92D6 /* WorkoutTableViewController.swift */,
 				BA6136D91E704E9400DD4341 /* AddToWorkoutViewController.swift */,
-				BA4C148A1E86E93A00393A50 /* Main.storyboard */,
+				BADEE6D21EA7BE5D00B44461 /* Main.storyboard */,
 				BA37B0071E891F3300A36FFC /* Main.strings */,
 				BADEE6CD1EA68E3A00B44461 /* Model.xcdatamodeld */,
-				BADEE6D01EA7B8B800B44461 /* UserWeights.swift */,
 				BA2867A51E3BAFA200D1811A /* Assets.xcassets */,
 				BA2867A71E3BAFA200D1811A /* LaunchScreen.storyboard */,
 				BA2867AA1E3BAFA200D1811A /* Info.plist */,
@@ -169,10 +166,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA4C148B1E86E93A00393A50 /* Main.storyboard in Resources */,
 				BA37B0081E891F3300A36FFC /* Main.strings in Resources */,
 				BA2867A91E3BAFA200D1811A /* LaunchScreen.storyboard in Resources */,
 				BA2867B11E3EAA9F00D1811A /* Assets.xcassets in Resources */,
+				BADEE6D31EA7BE5D00B44461 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,7 +186,6 @@
 				BADEE68D1EA67F9600B44461 /* EnterWeightViewController.swift in Sources */,
 				BACCDB6F1E41B3910088D345 /* ProfileViewController.swift in Sources */,
 				BADEE68F1EA6804500B44461 /* WeightLogTableViewController.swift in Sources */,
-				BADEE6D11EA7B8B800B44461 /* UserWeights.swift in Sources */,
 				BAA138D11E6F834D00CB92D6 /* WorkoutTableViewController.swift in Sources */,
 				BA28679D1E3BAFA200D1811A /* AppDelegate.swift in Sources */,
 				BA6136DA1E704E9400DD4341 /* AddToWorkoutViewController.swift in Sources */,

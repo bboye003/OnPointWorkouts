@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class EnterWeightViewController: UIViewController {
 
@@ -17,7 +18,13 @@ class EnterWeightViewController: UIViewController {
     
     //save weight entry
     @IBAction func buttonSaved(_ sender: Any) {
-        var appDel
+        //reference to appdelegate
+//        var appDel: AppDelegate = (UIApplication.shared.delegate as! AppDelegate)
+//        var context: NSManagedObjectContext = appDel.
+        
+        
+        
+        
     }
     
     
