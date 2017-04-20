@@ -2,9 +2,9 @@
 //  EnterWeightViewController.swift
 //  OnPoint Workouts
 //
-//  Created by Bret Boyer on 4/18/17.
+//  Created by Bret Boyer on 4/12/17.
 //  Copyright © 2017 OnPoint Workouts. All rights reserved.
-//
+// 
 
 import UIKit
 import CoreData
@@ -43,7 +43,16 @@ class EnterWeightViewController: UIViewController {
         //Save the data
         (UIApplication.shared.delegate as! AppDelegate).saveContext()
         
+        weightTextField.text = ""
+        
     }
+    
+    //Hide keyboard
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
     
     
     override func viewDidLoad() {
