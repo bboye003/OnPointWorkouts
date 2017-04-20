@@ -21,7 +21,6 @@
 		BAB67A601E97E51400138822 /* CalorieCalcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB67A5F1E97E51400138822 /* CalorieCalcViewController.swift */; };
 		BAB67A621E998EAE00138822 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB67A611E998EAE00138822 /* FormViewController.swift */; };
 		BACCDB6F1E41B3910088D345 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACCDB6E1E41B3910088D345 /* ProfileViewController.swift */; };
-		BACCDB711E4242810088D345 /* WorkoutTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACCDB701E4242810088D345 /* WorkoutTypeViewController.swift */; };
 		BADEE68D1EA67F9600B44461 /* EnterWeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADEE68C1EA67F9600B44461 /* EnterWeightViewController.swift */; };
 		BADEE6CF1EA68E3A00B44461 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BADEE6CD1EA68E3A00B44461 /* Model.xcdatamodeld */; };
 		BADEE6D31EA7BE5D00B44461 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BADEE6D21EA7BE5D00B44461 /* Main.storyboard */; };
@@ -45,7 +44,6 @@
 		BAB67A5F1E97E51400138822 /* CalorieCalcViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalorieCalcViewController.swift; sourceTree = "<group>"; };
 		BAB67A611E998EAE00138822 /* FormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
 		BACCDB6E1E41B3910088D345 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = ../ProfileViewController.swift; sourceTree = "<group>"; };
-		BACCDB701E4242810088D345 /* WorkoutTypeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WorkoutTypeViewController.swift; path = ../WorkoutTypeViewController.swift; sourceTree = "<group>"; };
 		BADEE68C1EA67F9600B44461 /* EnterWeightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterWeightViewController.swift; sourceTree = "<group>"; };
 		BADEE6CE1EA68E3A00B44461 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		BADEE6D21EA7BE5D00B44461 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../Main.storyboard; sourceTree = "<group>"; };
@@ -88,7 +86,6 @@
 				BAB67A611E998EAE00138822 /* FormViewController.swift */,
 				BAB67A5D1E97E3F200138822 /* MacroCalcViewController.swift */,
 				BAB67A5F1E97E51400138822 /* CalorieCalcViewController.swift */,
-				BACCDB701E4242810088D345 /* WorkoutTypeViewController.swift */,
 				BA171A301E5F5B5000B45E6E /* CrossFitViewController.swift */,
 				BACCDB6E1E41B3910088D345 /* ProfileViewController.swift */,
 				BA6B88C41EA143CA00E8A2B3 /* CaliperViewController.swift */,
@@ -189,7 +186,6 @@
 				BAA138D11E6F834D00CB92D6 /* WorkoutTableViewController.swift in Sources */,
 				BA28679D1E3BAFA200D1811A /* AppDelegate.swift in Sources */,
 				BA6136DA1E704E9400DD4341 /* AddToWorkoutViewController.swift in Sources */,
-				BACCDB711E4242810088D345 /* WorkoutTypeViewController.swift in Sources */,
 				BAB67A5E1E97E3F200138822 /* MacroCalcViewController.swift in Sources */,
 				BA4C14931E86EFFF00393A50 /* newLoginViewController.swift in Sources */,
 				BA6B88C51EA143CA00E8A2B3 /* CaliperViewController.swift in Sources */,
