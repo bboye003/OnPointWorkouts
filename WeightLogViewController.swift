@@ -39,14 +39,9 @@ class WeightLogViewController: UIViewController, UITableViewDelegate,UITableView
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
-        
         let weight = userWeight[indexPath.row]
         
-        
-        cell.textLabel?.text = weight.weight! + " " + weight.units! + " " + weight.date!
-
-        
-        
+        cell.textLabel?.text = (weight.weight! + " " + weight.units! + " " + weight.date!)
         return cell
     }
     

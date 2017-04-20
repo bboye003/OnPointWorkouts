@@ -34,7 +34,7 @@ class EnterWeightViewController: UIViewController {
         //formatting date
         let date = Date()
         let formatter = DateFormatter()
-        formatter.dateFormat = "MM.dd.yyyy"
+        formatter.dateFormat = "MM/dd/yyyy"
         let realDate = formatter.string(from: date)
         
         newWeight.date = realDate
