@@ -42,7 +42,12 @@ class newLoginViewController: UIViewController {
                 myAlert.addAction(okAction)
                 self.present(myAlert, animated: true, completion: nil)
 
+            } else {
+                displayMyAlertMessage(userMessage: "Email or Password do not match!")
             }
+        } else {
+            displayMyAlertMessage(userMessage: "Email or Password do not match!")
+
         }
         
         
@@ -57,6 +62,6 @@ class newLoginViewController: UIViewController {
         
     }
 
-  
+ 
    
 }

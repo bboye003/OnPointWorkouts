@@ -45,7 +45,7 @@ class MacroCalcViewController: UIViewController {
         }
         
         if (Int(calories) > 45000) {
-            displayMyAlertMessage(userMessage: "No human has ever eaten more than 45,000 calories in a day\nPlease try again!")
+            displayMyAlertMessage(userMessage: "No human has ever eaten more than 45,000 calories in a day.\nPlease try again!")
             return
         }
 
@@ -79,6 +79,10 @@ class MacroCalcViewController: UIViewController {
         self.present(myAlert, animated:true, completion:nil)
         
     }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+
 
     
 

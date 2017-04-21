@@ -15,7 +15,7 @@ class EnterWeightViewController: UIViewController {
     @IBOutlet var weightTextField: UITextField!
     @IBOutlet var metric: UISwitch!
     
-    //save weight entry
+    /*create and save weight entry*/
     @IBAction func buttonSaved(_ sender: Any) {
         
         
@@ -24,7 +24,7 @@ class EnterWeightViewController: UIViewController {
         
         newWeight.weight = weightTextField.text! //Check to make sure this is filled (Alert message)
         
-        //savw metric
+        //save metric
         if (metric.isOn){
             newWeight.units = "lbs"
         } else {
@@ -39,7 +39,7 @@ class EnterWeightViewController: UIViewController {
         newWeight.date = realDate
         
         
-        //Save the data
+        //Save all content
         (UIApplication.shared.delegate as! AppDelegate).saveContext()
         
         weightTextField.text = ""
