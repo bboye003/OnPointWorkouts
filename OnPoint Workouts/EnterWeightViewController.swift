@@ -22,7 +22,7 @@ class EnterWeightViewController: UIViewController {
         let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
         let newWeight = UserWeight(context: context)
         
-        newWeight.weight = weightTextField.text! //Check to make sure this is filled (Alert message)
+        newWeight.weight = weightTextField.text! //TODO Check to make sure this is filled (Alert message)
         
         //save metric
         if (metric.isOn){
