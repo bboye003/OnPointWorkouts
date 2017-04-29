@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseDatabase
 
 class newLoginViewController: UIViewController {
 
@@ -18,36 +20,24 @@ class newLoginViewController: UIViewController {
 
     @IBAction func loginButtonTapped(_ sender: Any) {
         
-        let userEmail = userEmailFieldText.text
-        let userPassword = userPasswordFieldText.text
-        
-        let userEmailStored = UserDefaults.standard.string(forKey: "userEmail")
-        let userPasswordStored = UserDefaults.standard.string(forKey: "userPassword")
+        if let email = userEmailFieldText.text, let password = userPasswordFieldText.text {
+            FIRAuth.auth()?.signIn(withEmail: email, password: password) { (user, error) in
+                //Sign in the user
+                if error = nil {
+                    //perform seque
+                    
+                } else {
+                    FIRAuth.auth()?.createUser(withEmail: email, password: password) { (user, error) in
+                        // ...
+                        if error != nil {
+                            print("Can't sign-in user!")
+                        } else {
+                            //perform seque
+                        }
+                    }
 
-        
-        if ((userEmail?.isEmpty)! || (userPassword?.isEmpty)!){
-            displayMyAlertMessage(userMessage: "All fields are required!")
-        }
-        
-        if (userEmailStored == userEmail) {
-            if (userPasswordStored == userPassword) {
-                //login successful
-                UserDefaults.standard.set(true, forKey: "isUserLoggedIn")
-                UserDefaults.standard.synchronize()
-                let myAlert = UIAlertController(title: "Alert", message: "Login is successful!", preferredStyle: UIAlertControllerStyle.alert)
-                let okAction = UIAlertAction(title: "Ok", style: UIAlertActionStyle.default) {
-                    action in self.dismiss(animated: true, completion: nil)
                 }
-                
-                myAlert.addAction(okAction)
-                self.present(myAlert, animated: true, completion: nil)
-
-            } else {
-                displayMyAlertMessage(userMessage: "Email or Password do not match!")
             }
-        } else {
-            displayMyAlertMessage(userMessage: "Email or Password do not match!")
-
         }
         
         
