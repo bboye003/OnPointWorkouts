@@ -7,37 +7,45 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
 
 class RegisterViewController: UIViewController {
 
     
-    @IBOutlet weak var userEmailTextField: UITextField!
-    @IBOutlet weak var userPasswordTextField: UITextField!
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var confirmPasswordTextField: UITextField!
     @IBAction func registerButtonTapped(_ sender: Any) {
         
-        let userEmail = userEmailTextField.text
-        let userPassword = userPasswordTextField.text
-        let userConfirmPassword = confirmPasswordTextField.text
+        let email = emailTextField.text
+        let password = passwordTextField.text
+        let confirmPassword = confirmPasswordTextField.text
         
         //check for empty fields
-        if ((userEmail?.isEmpty)! || (userPassword?.isEmpty)! || (userConfirmPassword?.isEmpty)!) {
+        if (!(email?.isEmpty)! || !(password?.isEmpty)! || !(confirmPassword?.isEmpty)!) {
+            if (password == confirmPassword) {
+                
+                FIRAuth.auth()?.createUser(withEmail: email!, password: password!) { (user, error) in
+                    // user is found go to home screen
+                    if user != nil {
+                        self.performSegue(withIdentifier: "Registered", sender: self)
+                        
+                    }
+                }
+                
+                
+            } else {
+                displayMyAlertMessage(userMessage: "Password do not match!")
+                return
+                
+            }
             
+        } else {
             displayMyAlertMessage(userMessage: "All fields are required!")
             return
         }
-        //check both passwords are the same
-        if (userPassword != userConfirmPassword) {
-            
-            displayMyAlertMessage(userMessage: "Password do not match!")
-            return
-        }
-        
-        
-        //Store data on machine
-        UserDefaults.standard.set(userEmail, forKey: "userEmail")
-        UserDefaults.standard.set(userPassword, forKey: "userPassword")
-        UserDefaults.standard.synchronize()
+       
         
         let myAlert = UIAlertController(title: "Alert", message: "Registration is successful!", preferredStyle: UIAlertControllerStyle.alert)
         let okAction = UIAlertAction(title: "Ok", style: UIAlertActionStyle.default) {

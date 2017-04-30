@@ -13,29 +13,20 @@ import FirebaseDatabase
 class newLoginViewController: UIViewController {
 
     
-    @IBOutlet weak var userEmailFieldText: UITextField!
-    @IBOutlet weak var userPasswordFieldText: UITextField!
+    @IBOutlet weak var emailFieldText: UITextField!
+    @IBOutlet weak var passwordFieldText: UITextField!
     
        
 
     @IBAction func loginButtonTapped(_ sender: Any) {
         
-        if let email = userEmailFieldText.text, let password = userPasswordFieldText.text {
+        if let email = emailFieldText.text, let password = passwordFieldText.text {
             FIRAuth.auth()?.signIn(withEmail: email, password: password) { (user, error) in
-                //Sign in the user
-                if error = nil {
-                    //perform seque
-                    
-                } else {
-                    FIRAuth.auth()?.createUser(withEmail: email, password: password) { (user, error) in
-                        // ...
-                        if error != nil {
-                            print("Can't sign-in user!")
-                        } else {
-                            //perform seque
-                        }
-                    }
+                if user != nil {
+                    self.performSegue(withIdentifier: "SignIn", sender: self)
 
+                } else {
+                    self.displayMyAlertMessage(userMessage: "Email or Password are incorrect or do not exist!")
                 }
             }
         }
@@ -52,7 +43,8 @@ class newLoginViewController: UIViewController {
         
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.view.endEditing(true)
+        emailFieldText.resignFirstResponder()
+        passwordFieldText.resignFirstResponder()
     }
 
 
