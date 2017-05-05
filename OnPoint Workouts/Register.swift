@@ -59,7 +59,7 @@ class RegisterViewController: UIViewController {
     }
     
     
-    
+    //display message when called on
     func displayMyAlertMessage(userMessage:String) {
         
         let myAlert = UIAlertController(title: "Alert", message: userMessage, preferredStyle: UIAlertControllerStyle.alert)
@@ -68,12 +68,11 @@ class RegisterViewController: UIViewController {
         self.present(myAlert, animated:true, completion:nil)
         
     }
+    //return keyboard
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
 
-
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 

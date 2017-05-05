@@ -37,19 +37,19 @@ class MacroCalcViewController: UIViewController {
         percFat = Double(self.fatPercentText.text!)!
         percProtein = Double(self.proteinPercentText.text!)!
         
-        
+        //error if fields aren't filled
         if ((percCarb.isZero) || (percFat.isZero) || (percProtein.isZero)) {
             displayMyAlertMessage(userMessage: "All fields are required!")
             return
             
         }
-        
+        //error if calories are greater than 45,000 calories
         if (Int(calories) > 45000) {
             displayMyAlertMessage(userMessage: "No human has ever eaten more than 45,000 calories in a day.\nPlease try again!")
             return
         }
 
-        
+        //
         if (Int(percCarb) + Int(percFat) + Int(percProtein) != 100) {
             displayMyAlertMessage(userMessage:"Carbs, Fats, and Protein\nDo not equal 100%")
             return
