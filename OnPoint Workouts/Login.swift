@@ -16,7 +16,6 @@ class newLoginViewController: UIViewController {
     @IBOutlet weak var emailFieldText: UITextField!
     @IBOutlet weak var passwordFieldText: UITextField!
     
-       
 
     @IBAction func loginButtonTapped(_ sender: Any) {
         
@@ -33,15 +32,15 @@ class newLoginViewController: UIViewController {
         
         
     }
-    
+    //Displays message when called on
     func displayMyAlertMessage(userMessage:String) {
-        
         let myAlert = UIAlertController(title: "Alert", message: userMessage, preferredStyle: UIAlertControllerStyle.alert)
         let okAction = UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil)
         myAlert.addAction(okAction)
         self.present(myAlert, animated:true, completion:nil)
         
     }
+    //return keyboard
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         emailFieldText.resignFirstResponder()
         passwordFieldText.resignFirstResponder()
