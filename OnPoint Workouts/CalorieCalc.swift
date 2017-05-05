@@ -24,9 +24,9 @@ class CalorieCalcViewController: UIViewController {
          fat = Int(self.fatsTextField.text!)!
          protein = Int(self.proteinsTextField.text!)!
          
-         carb = (carb * 4)
-         fat = (fat * 9)
-         protein = (protein * 4)
+         carb = (carb * 4) //for every gram of carbs there are 4 calories
+         fat = (fat * 9) //for every gram of fat there are 9 calories
+         protein = (protein * 4) //for every gram of protein there are 4 calories
          
          let totalCalories = (carb) + (fat) + (protein)
          
@@ -35,7 +35,7 @@ class CalorieCalcViewController: UIViewController {
         
         
     }
-    
+    //return keyboard
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }

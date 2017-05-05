@@ -10,6 +10,8 @@ import UIKit
 
 class CrossFitViewController: UIViewController {
 
+    //TODO: Mobility video
+    
     @IBAction func WODlink(_ sender: UIButton) {
         let url = URL(string: "https://www.crossfit.com/workout/")!
             if UIApplication.shared.canOpenURL(url) {
