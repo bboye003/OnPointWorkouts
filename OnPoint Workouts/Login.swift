@@ -19,6 +19,13 @@ class newLoginViewController: UIViewController {
 
     @IBAction func loginButtonTapped(_ sender: Any) {
         
+        //TODO all fields are typed into
+        /*if (emailFieldText) || (passwordFieldText = "") {
+            self.displayMyAlertMessage(userMessage: "Fill in email and password!");
+            return;
+            
+        }*/
+        
         if let email = emailFieldText.text, let password = passwordFieldText.text {
             FIRAuth.auth()?.signIn(withEmail: email, password: password) { (user, error) in
                 if user != nil {
